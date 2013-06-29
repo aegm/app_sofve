@@ -1,0 +1,26 @@
+/*COLORES 
+ *NARANJA #ca6b0f
+ *NARANJA OSCURO #ad5a0d
+ *AZUL #042d41*/
+body{
+    margin: 0;
+}
+header{
+    width: 100%;
+    min-height: 120px;
+    background: #ca6b0f;
+    -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px #ad5a0d solid;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.7);
+    margin-bottom: 0;
+    padding-bottom: 0;
+    }
+
+section{width: 100%;;position: relative;margin: 0; padding: 2%;min-height: 400px;
+        background: -moz-linear-gradient(45deg, #020031 0%, #e5e9ec 100%);
+        background: -webkit-linear-gradient(45deg, #d8d8d8 0%, #e5e9ec 100%);
+        }
+        
+section article { padding:  2%;}
+article h2{text-align: center;color: #ed4c2a;font-size: 38px; }
+article h3{text-align: center;color: #666;font-size: 38px; }

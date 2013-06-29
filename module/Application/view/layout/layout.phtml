@@ -1,0 +1,27 @@
+<?php echo $this->doctype(); ?>
+<html lang="es_ES">
+    <head>
+         <meta charset="UTF-8">
+        <?php echo $this->headTitle('Sofve.com ');?>
+        <?php  $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0');
+               $this->headMeta()->appendName('keywords', "php,formularios,dise�o, Desarrollo");
+               $this->headMeta()->appendName('description', "Dise�o y Desarrollo de Sistemas Webs");
+        echo $this->headMeta();
+        ?>
+        <!--styles-->
+        <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'img/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/icono.ico'))
+                        ->prependStylesheet($this->basePath().'/css/estilo.css'); ?>
+        <!--scripts-->
+        <?php echo $this->headScript()->prependFile($this->basePath().'/js/jquery.min.js'); ?>
+    </head>
+    <body>
+    <header>prueba</header>
+    <section>
+        <?php echo $this->content; ?>
+    </section>
+    <footer></footer>
+    <?php $this->inlineScript(); ?>
+    
+    </body>
+
+</html>

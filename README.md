@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ZendSkeletonApplication
 =======================
 
@@ -50,3 +51,7 @@ Virtual Host
 ------------
 Afterwards, set up a virtual host to point to the public/ directory of the
 project and you should be ready to go!
+=======
+app_sofve
+=========
+>>>>>>> 01713f7859bc17f17631413fbe79a29fd61b7a3c

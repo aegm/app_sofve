@@ -1,0 +1,17 @@
+<h3>Hola desde el modelo</h3>
+
+<h1>Valor desde el modelo es <?php echo $this->texto ?></h1>
+
+<h1>Valor desde el modelo el array <?php print_r($this->array); ?></h1>
+
+
+<h3>Recorriendo un arreglo</h3>
+
+<?php 
+foreach($this->array as $campos)
+{
+    echo $campos."<br>";
+}
+?>
+
+<h3>Desde el controller <?php echo $this->desdeFuera; ?></h3>

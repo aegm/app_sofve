@@ -4,8 +4,8 @@
          <meta charset="UTF-8">
         <?php echo $this->headTitle('Sofve.com ');?>
         <?php  $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0');
-               $this->headMeta()->appendName('keywords', "php,formularios,diseño, Desarrollo");
-               $this->headMeta()->appendName('description', "Diseño y Desarrollo de Sistemas Webs");
+               $this->headMeta()->appendName('keywords', "php,formularios,diseï¿½o, Desarrollo");
+               $this->headMeta()->appendName('description', "Diseï¿½o y Desarrollo de Sistemas Webs");
         echo $this->headMeta();
         ?>
         <!--styles-->
@@ -15,7 +15,16 @@
         <?php echo $this->headScript()->prependFile($this->basePath().'/js/jquery.min.js'); ?>
     </head>
     <body>
-    <header>prueba</header>
+    <header>
+        <div class="panel-lef">
+            <div class="logo">
+                <img src="../img/logo.png">
+            </div>
+        </div>
+        <div class="panel-righ menu">
+            
+        </div>
+    </header>
     <section>
         <?php echo $this->content; ?>
     </section>

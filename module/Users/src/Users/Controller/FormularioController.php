@@ -11,25 +11,24 @@ namespace Users\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
-use Users\Model\Entity\Modelo;
+use Users\Form\Formulario;
 
-class UsersController extends AbstractActionController
+class FormularioController extends AbstractActionController
 {
     public function indexAction()
     {
         return new ViewModel();
     }
-    public function modelAction()
+    public function formularioAction()
     {
-        $model = new modelo("prueba desde el controller");
-        $m = $model->getTexto();
-        $a=$model->getArray();
-        $d = $model->desdeelController();
-        return new ViewModel(array("texto"=>$m,"array"=>$a,"desde"=>$d));
+        $form=new Formulario("form");
+        return new ViewModel(array("titulo"=>"Formularios en ZF2","form"=>$form,'url'=>$this->getRequest()->getBaseUrl()));
+        //return new ViewModel();
     }
-    
-    public function addUsers()
+    public function recibeAction()
     {
-        
+       
     }
+   
 }
+

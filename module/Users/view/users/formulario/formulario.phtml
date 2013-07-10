@@ -1,0 +1,49 @@
+<h1><?php echo $this->titulo?></h1>
+<?php
+$form = $this->form;
+$form->prepare();
+/*
+// Assuming the "contact/process" route exists...
+$form->setAttribute('action', $this->url('application/formulario/recibe'));
+
+// Set the method attribute for the form
+$form->setAttribute('method', 'post');
+*/
+
+$form->setAttributes(array(
+    'action' => $this->url.'/application/formulario/recibe',
+    'method' => 'post'
+));
+// Get the form label plugin
+$formLabel = $this->plugin('formLabel');
+
+// Render the opening tag
+echo $this->form()->openTag($form);
+?>
+
+<div class="form_element">
+Nombre Completo : 
+<?php
+    $name = $form->get('nombre');
+    //echo $formLabel->openTag().$name->getOption('label')." ";
+    echo $this->formInput($name);
+    //echo $this->formElementErrors($name);
+    //echo $formLabel->closeTag();
+?>
+</div>
+
+
+<div class="form_element">
+
+<?php
+    $email = $form->get('email');
+    echo $formLabel->openTag().$email->getOption('label')." ";
+    echo $this->formInput($email);
+    //echo $this->formElementErrors($name);
+    echo $formLabel->closeTag();
+?>
+</div>
+
+<?php echo $this->formElement($form->get('send')); ?>
+
+<?php echo $this->form()->closeTag(); ?>

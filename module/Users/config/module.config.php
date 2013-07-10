@@ -3,28 +3,41 @@
 return array(
     'controllers'=>array(
         'invokables'=>array(
-            'Users\Controller\Users'=>'Users\Controller\UsersController'
+            'Users\Controller\Users'=>'Users\Controller\UsersController',
+            'Users\Controller\Formulario'=>'Users\Controller\FormularioController'
          ),
      ),
      
      'router'=>array(
         'routes'=>array(
-            'users'=>array(
-                 'type'=>'Segment',
-                    'options'=>array(
-                        
-                        'route' => '/users[/[:action]]',
-                        'constraints' => array(
-                                'action'  =>  '[a-zA-Z][a-zA-Z0-9_-]*',
-                        ),
-                        
-                        'defaults'  =>  array(
-                                'controller' => 'Users\Controller\Users',
-                                'action'     => 'index'
-                         
+            'users' => array(
+                'type'    => 'Literal',
+                'options' => array(
+                    'route'    => '/users',
+                    'defaults' => array(
+                        '__NAMESPACE__' => 'Users\Controller',
+                        'controller'    => 'Index',
+                        'action'        => 'index',
+                    ),
+                ),
+                'may_terminate' => true,
+                'child_routes' => array(
+                    'default' => array(
+                        'type'    => 'Segment',
+                        'options' => array(
+                            //'route'    => '/[:controller[/:action]]',
+                            'route'    => '/[:controller[/:action[/:id]]]',
+                            //'route'    => '/[:controller[/:action[/:id/:id2]]]',
+                            'constraints' => array(
+                                'controller' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                                'action'     => '[a-zA-Z][a-zA-Z0-9_-]*',
+                            ),
+                            'defaults' => array(
+                            ),
                         ),
                     ),
-           ),
+                ),
+            )
        ),
     ),
     

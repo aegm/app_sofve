@@ -1,0 +1,78 @@
+#DefaultPanel div,#DefaultPanel span,#magicBoxContent div,#magicBoxContent span,.cdsDomainNamesHolder div{font-family:Helvetica,Arial,"Lucida Grande",sans-serif;font-weight:300}
+h1,h2,h3,h4{font-weight:normal}
+#DefaultPanel a:hover{color:#fff}
+.gdhp-header-snipe{display:none}
+.gdhp-main-top{background:#fff;margin:0 auto;padding:25px 0;position:relative;width:1000px;z-index:2}
+.gdhp-search-box{background-color:#fff;border: 3px solid #999;height:40px;margin:0 142px;padding: 1px;position:relative;width:694px}
+.gdhp-search-box .domainSearchBox{float:left;height:40px;margin:0;padding:0;position:relative;width:601px;z-index:1}
+.gdhp-search-box input,.gdhp-search-box .searchInput{background:transparent;border:0;color:#999;float:left;font-size:20px;height:25px;line-height:25px;margin:6px 0 0 0;outline:0;padding:1px 0 1px 15px;width:462px}
+.gdhp-search-box .searchTld{color:#666;font-family:Helvetica,Arial,"Lucida Grande",sans-serif;padding:7px 0 1px 12px;margin:0;width:85px}
+.gdhp-search-box .tldContainer{background:#ccc;cursor:pointer;height:40px;float:left;width:124px}
+.gdhp-search-box .searchToggle-arrow{color:#666;font-size:14px;text-align:center;padding:12px 5px 2px 0}
+.gdhp-search-box .searchToggle{float:left;height:24px;width:15px}
+.gdhp-search-box ul{background-color:#fff;border:1px solid #c2c2c2;border-radius:0 0 4px 4px;border-top:0;box-shadow:0 2px 3px rgba(0,0,0,.25);color:#000;display:none;font-size:16px;font-weight:normal;height:133px;list-style:none;margin:0;overflow-x:hidden;overflow-y:auto;padding:0;position:absolute;right:0;top:40px;width:122px}
+.gdhp-search-box ul li{cursor:pointer;font-family:Arial,sans-serif;padding:0 0 0 10px}
+.gdhp-search-box .domainSearchButton{background:#7db701;color:#fff;cursor:pointer;float:left;font-size:20px;line-height:20px;padding:10px 14px;width:65px}
+.gdhp-search-box>a.bulk-search{color:#fff;font-size:14px;position:absolute;left:825px;text-decoration:none;top:15px;width:124px}
+.gdhp-main-top>a.bulk-search:hover{text-decoration:underline}
+ul.search-links {bottom: 25px;left: 851px;position: absolute}
+ul.search-links>li, ul.search-links>li a {color: #333;font-size: 14px;text-decoration: none;padding: 5px 0 0}
+ul.search-links>li a:hover{color: #333 !important;text-decoration: none}
+ul.search-links>li img {padding-right: 4px;position: relative;top:2px}
+.main-content{position:relative;width:100%;z-index:1;*margin-top: -3px;}
+.gdhp-wrapper{margin:0 auto;position:relative;width:1000px}
+.gdhp-wrapper:after{clear:both;content:"";display:table}
+#slideshow{height:350px;margin:0 auto;width:1000px}
+.nav{text-align:center;width:1000px;margin:0 auto}
+.nav a{background:#999;display:inline-block;height:12px;font-size:0;margin:15px 8px 0;text-decoration:none;width:12px}
+.nav a.activeSlide{background:#7db701}
+ul.slides{width:1000px;height:350px;padding:0;margin:0;overflow:hidden}
+.slides li{cursor:pointer;width:1000px!important;height:350px!important;top:0;left:0}
+.slideshow-decription{margin-top:25px;padding:25px;width:435px}
+.slideshow-decription>h3{color:#333;display:block;font-size:45px;font-weight:lighter;line-height:46px;margin-top:21px}
+.slideshow-decription p{color:#333;font-size:20px;height:60px;line-height:26px;margin:19px 0 10px}
+.slideshow-decription span{color:#333;display:inline-block;font-size:24px;margin:0 0 7px 15px;vertical-align:middle;width:212px}
+.slideshow-decription .flat-btn-grn{font-size:24px;line-height:24px;*vertical-align:middle}
+.customer-description{height:350px;margin:0 25px;position:relative;text-shadow:1px 1px 25px #000;width:148px}
+.customer-description p{bottom:23px;color:#fff;font-size:20px;line-height:26px;position:absolute;width:148px}
+.customer-description p>span{display:block;font-size:14px;line-height:20px}
+.gdhp-slide-wsb{background:url(//img1.wsimg.com/fos/hp/1/gdhp_slide_wsb.jpg) no-repeat}
+.gdhp-slide-outright{background:url(//img1.wsimg.com/fos/hp/1/gdhp_slide_outright.jpg) no-repeat}
+.gdhp-slide-co{background:url(//img1.wsimg.com/fos/hp/1/gdhp_slide_co.jpg) no-repeat}
+.gdhp-pod{margin:35px 0 20px}
+.gdhp-pod:after{clear:both;content:"";display:table}
+.gdhp-pod ul{list-style-type:none;margin:0;padding:0 24px}
+.gdhp-pod li{cursor:pointer;float:left;text-align:center;margin-left:108px;min-height:200px}
+.gdhp-pod li:first-child{margin-left:0}
+.gdhp-pod li>p{color:#333;margin:11px 0 15px;font-size:20px;line-height:26px}
+.gdhp-pod li>.flat-btn-grn{color:#fff;font-size:20px;line-height:20px;padding:11px 20px 9px;text-decoration:none;*vertical-align:middle}
+.three-pod li{width:245px}
+.gdhp-support-section{background:url(//img1.wsimg.com/fos/hp/1/gdhp_support.jpg) no-repeat 25px bottom;border-bottom:1px solid #d6d6d6;margin:0 auto;padding:30px 0 0 0;position:relative;width:1000px}
+.gdhp-support-section h3{color:#333;font-size:30px;font-weight:lighter;margin:10px 0 15px 395px}
+.gdhp-support-section p{color:#333;font-size:20px;line-height:25px;margin:0 0 20px 395px;width:470px}
+.gdhp-share{position:absolute;right:0;top:360px}
+.gdhp-header-snipe{color:#fff;font-size:18px;background:#666;position:relative;padding:8px;width:505px;text-align:center;top:-25px;margin:0 auto}
+.gdhp-header-snipe a{color:#fff;text-decoration:none}
+.gdhp-header-snipe>.snipe-close{background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAZABkAAD/7AARRHVja3kAAQAEAAAAVQAA/+ENSWh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8APD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNC4yLjItYzA2MyA1My4zNTI2MjQsIDIwMDgvMDcvMzAtMTg6MDU6NDEgICAgICAgICI+CiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiCiAgICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgICB4bWxuczp4bXBSaWdodHM9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9yaWdodHMvIgogICAgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIgogICAgeG1sbnM6SXB0YzR4bXBDb3JlPSJodHRwOi8vaXB0Yy5vcmcvc3RkL0lwdGM0eG1wQ29yZS8xLjAveG1sbnMvIgogICB4bXBSaWdodHM6TWFya2VkPSJGYWxzZSIKICAgeG1wUmlnaHRzOldlYlN0YXRlbWVudD0iIgogICBwaG90b3Nob3A6QXV0aG9yc1Bvc2l0aW9uPSIiPgogICA8ZGM6cmlnaHRzPgogICAgPHJkZjpBbHQ+CiAgICAgPHJkZjpsaSB4bWw6bGFuZz0ieC1kZWZhdWx0Ii8+CiAgICA8L3JkZjpBbHQ+CiAgIDwvZGM6cmlnaHRzPgogICA8ZGM6Y3JlYXRvcj4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkvPgogICAgPC9yZGY6U2VxPgogICA8L2RjOmNyZWF0b3I+CiAgIDxkYzp0aXRsZT4KICAgIDxyZGY6QWx0PgogICAgIDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCIvPgogICAgPC9yZGY6QWx0PgogICA8L2RjOnRpdGxlPgogICA8eG1wUmlnaHRzOlVzYWdlVGVybXM+CiAgICA8cmRmOkFsdD4KICAgICA8cmRmOmxpIHhtbDpsYW5nPSJ4LWRlZmF1bHQiLz4KICAgIDwvcmRmOkFsdD4KICAgPC94bXBSaWdodHM6VXNhZ2VUZXJtcz4KICAgPElwdGM0eG1wQ29yZTpDcmVhdG9yQ29udGFjdEluZm8KICAgIElwdGM0eG1wQ29yZTpDaUFkckV4dGFkcj0iIgogICAgSXB0YzR4bXBDb3JlOkNpQWRyQ2l0eT0iIgogICAgSXB0YzR4bXBDb3JlOkNpQWRyUmVnaW9uPSIiCiAgICBJcHRjNHhtcENvcmU6Q2lBZHJQY29kZT0iIgogICAgSXB0YzR4bXBDb3JlOkNpQWRyQ3RyeT0iIgogICAgSXB0YzR4bXBDb3JlOkNpVGVsV29yaz0iIgogICAgSXB0YzR4bXBDb3JlOkNpRW1haWxXb3JrPSIiCiAgICBJcHRjNHhtcENvcmU6Q2lVcmxXb3JrPSIiLz4KICA8L3JkZjpEZXNjcmlwdGlvbj4KIDwvcmRmOlJERj4KPC94OnhtcG1ldGE+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAKPD94cGFja2V0IGVuZD0idyI/Pv/uAA5BZG9iZQBkwAAAAAH/2wCEAAIBAQEBAQIBAQIDAgECAwMCAgICAwMDAwMDAwMFAwQEBAQDBQUFBgYGBQUHBwgIBwcKCgoKCgwMDAwMDAwMDAwBAgICBAMEBwUFBwoIBwgKDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDP/AABEIAA8ADwMBEQACEQEDEQH/xABbAAEBAQAAAAAAAAAAAAAAAAACAAUBAQAAAAAAAAAAAAAAAAAAAAAQAAEEAgICAgMAAAAAAAAAAAERAgMEBQYxEiEiEwckFQgRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANyrV1n+e9Zxlq1jH2ZbL2xZXKxNY58L3MVSvt17eGtCBByvIDIwa7vmq1/uH9S/H5HE2W5SMkRiS1UpzCZ69UBD2NKduHcFPJCrZHVd813En7gr2MRkMe8F0WUbNTqWpBH1XtKGscCB2RQR5HHIC7d1TXdUg0jSYbV/T79rrksmBPLSq0pZwLX5SfGGiNR6lGhSSvIf/9k=);cursor:pointer;height:15px;position:absolute;right:12px;top:11px;width:15px}
+.gdhp-header-snipe{display:none}
+#searchDomainName-label{top:2px!important}
+#pch5{margin:0 auto}
+.flat-btn-grn{background:#7db701;color:#fff;cursor:pointer;display:inline-block;padding:13px 35px 11px;text-align:center}
+a.flat-btn-grn{color:#fff;text-decoration:none}
+.left{float:left}
+.right{float:right}
+.isi_showValue{font-weight:bold}
+.cds-page-disclaimer{border:0;margin:0 auto;width:1000px}
+.fancyfont{font-family:Crete Round,Trebuchet MS,Sans-Serif}
+.helveticafont{font-family:Helvetica Neue,Arial,Helvetica,Lucida Grande,sans-serif}
+.gdhp-main{margin:10px 0 0 0}
+.cdsDomainNamesHolder{clear:both;color:#707070;font-size:14px;margin:0 auto;width:1000px}
+#domainNamesButton{background:#666;color:#fff;cursor:pointer;display:inline-block;font-family:arial;font-size:14px;font-weight:normal;min-width:40px;padding:9px 10px;text-align:center;text-decoration:none;vertical-align:baseline;filter:none}
+#mainContent .cdsDomainNamesHolder a{box-shadow:none;border-radius:0;border-top:0;color:#fff;display:block;margin:0 auto;text-shadow:none;position:relative;text-decoration:none;width:20%;z-index:2}
+.cdsDomainNamesHolder a h1{display:inline;font-weight:normal}
+#domainNamesArrow{display:none}
+.cdsDomainNamesHolder .cdsDomainNamesIcon{width:30px;height:30px;display:inline-block;margin:0 5px 0;vertical-align:middle}
+.cdsDomainNamesHolder .cdsDomainNamesInner h3{color:#333;font-size:24px;font-weight:normal}
+.cdsDomainNamesHolder .cdsDomainNamesContent{background-color:#F2F2F2;margin:20px 0 0 0;padding:25px 20px 20px 20px}
+.cdsDomainNamesHolder .cdsDomainNamesContent h4{display:inline;vertical-align:middle;color:#333;font-size:18px}
+.cdsDomainNamesHolder .cdsDomainNamesContent p{margin:15px 0}

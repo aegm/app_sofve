@@ -20,36 +20,15 @@
   font-weight: 700;
   src: local('Dosis Bold'), local('Dosis-Bold'), url(http://themes.googleusercontent.com/static/fonts/dosis/v1/x-7NZTw0n-ypOAaIE8uSrvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
 }
-
-
-body{
-    margin: 0;
-    font-family: Dosis,Tahoma,sans-serif;
-}
-header{
-    width: 100%;
-    min-height: 60px;
-    background: #fff;
-    -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
-    border-bottom: 1px #ad5a0d solid;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.7);
-    margin-bottom: 0;
-    padding-bottom: 0;
-    }
-    
-    header .panel-lef {width: 40%; float: left;}
-    header .panel-righ {width: 60%; float: right;}
-    .panel-lef .logo {text-align: center;   }
-    .panel-righ .menu{float: right; margin-right: 20%;}
-    .menu li{float: left;margin-right: 24px;font-size: 16px;line-height: 27px; list-style: none;}
-    .menu li:hover{cursor: pointer; color: #f16529;}
-
-    section{width: 100%;;position: relative;margin: 0; padding: 2%;min-height: 400px;
-        /*background: -moz-linear-gradient(180deg, #f16529 0%, #f16529 100%);
-        background: -webkit-linear-gradient(-90deg, #f16529 0%, #f16529   100%);*/
-        background: #f16529;
-        }
-        
+body{margin: 0;font-family: Dosis,Tahoma,sans-serif;}
+header{width: 100%;min-height: 65px;background: #fff;-webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);border-bottom: 1px #ad5a0d solid;box-shadow: 0 1px 10px rgba(0, 0, 0, 0.7);margin-bottom: 0;padding-bottom: 0;}
+header .panel-lef {width: 30%; float: left;}
+header .panel-righ {width: 60%; float: right;}
+.panel-lef .logo {text-align: center;   }
+.panel-righ .menu{float: right; margin-right: 20%;}
+.menu li{float: left;margin-right: 24px;font-size: 16px;line-height: 27px; list-style: none;}
+.menu li:hover{cursor: pointer; color: #f16529;}
+section{position: relative;margin: 0; padding: 2%;min-height: 400px;   /*background: -moz-linear-gradient(180deg, #f16529 0%, #f16529 100%);background: -webkit-linear-gradient(-90deg, #f16529 0%, #f16529   100%);*/    background: #f16529;}
 section article { padding:  2%;}
-article h2{font-weight: 700;text-align: center;font-size: 60px;margin: 0 0 16px;color: #fff;text-shadow: -1px 1px 1px rgba(0,0,0,.3); }
+article h2{font-weight: 700;text-align: center;font-size: 55px;margin: 0 0 16px;color: #fff;text-shadow: -1px 1px 1px rgba(0,0,0,.3); }
 article h3{text-align: center;color: #666;font-size: 38px; }

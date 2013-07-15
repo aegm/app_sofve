@@ -7,28 +7,15 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Users\Controller;
+namespace Contacto\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
-use Users\Form\Formulario;
 
-class FormularioController extends AbstractActionController
+class ContactoController extends AbstractActionController
 {
     public function indexAction()
     {
         return new ViewModel();
     }
-    public function formularioAction()
-    {
-        $form=new Formulario("form");
-        return new ViewModel(array("titulo"=>"Formularios en ZF2","form"=>$form,'url'=>$this->getRequest()->getBaseUrl()));
-        //return new ViewModel();
-    }
-    public function recibeAction()
-    {
-       
-    }
-   
 }
-

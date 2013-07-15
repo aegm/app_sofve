@@ -3,23 +3,23 @@
 return array(
     'controllers'=>array(
         'invokables'=>array(
-            'Producto\Controller\Producto'=>'Producto\Controller\ProductoController'
+            'Contacto\Controller\Contacto'=>'Contacto\Controller\ContactoController'
          ),
      ),
      
      'router'=>array(
         'routes'=>array(
-            'producto'=>array(
+            'contacto'=>array(
                  'type'=>'Segment',
                     'options'=>array(
                         
-                        'route' => '/producto[/[:action]]',
+                        'route' => '/contacto[/[:action]]',
                         'constraints' => array(
                                 'action'  =>  '[a-zA-Z][a-zA-Z0-9_-]*',
                         ),
                         
                         'defaults'  =>  array(
-                                'controller' => 'Producto\Controller\Producto',
+                                'controller' => 'Contacto\Controller\Contacto',
                                 'action'     => 'index'
                          
                         ),
@@ -37,12 +37,12 @@ return array(
         'exception_template'       => 'error/index',
         'template_map' => array(
             'layout/layout'           => __DIR__ . '/../view/layout/layout.phtml',
-            'producto/index/index' => __DIR__ . '/../view/producto/index/index.phtml',
+            'contacto/index/index' => __DIR__ . '/../view/contacto/index/index.phtml',
             'error/404'               => __DIR__ . '/../view/error/404.phtml',
             'error/index'             => __DIR__ . '/../view/error/index.phtml',
         ),
         'template_path_stack' => array(
-          'producto' =>  __DIR__ . '/../view',
+          'contacto' =>  __DIR__ . '/../view',
         ),
     ), 
- );                     
+ );                               

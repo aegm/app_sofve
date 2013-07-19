@@ -30,5 +30,5 @@ header .panel-righ {width: 60%; float: right;}
 .menu li:hover{cursor: pointer; color: #f16529;}
 section{position: relative;margin: 0; padding: 2%;min-height: 400px;   /*background: -moz-linear-gradient(180deg, #f16529 0%, #f16529 100%);background: -webkit-linear-gradient(-90deg, #f16529 0%, #f16529   100%);*/    background: #f16529;}
 section article { padding:  2%;}
-article h2{font-weight: 700;text-align: center;font-size: 55px;margin: 0 0 16px;color: #fff;text-shadow: -1px 1px 1px rgba(0,0,0,.3); }
+article h2{font-weight: 700;text-align: center;font-size: 55px;margin: 0 0 16px;color: #fff;text-shadow: -2px 1px 1px rgba(0,0,0,.5); }
 article h3{text-align: center;color: #666;font-size: 38px; }

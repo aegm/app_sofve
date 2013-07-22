@@ -27,6 +27,7 @@ header .panel-righ {width: 60%; float: right;}
 .panel-lef .logo {text-align: center;   }
 .panel-righ .menu{float: right; margin-right: 20%;}
 .menu li{float: left;margin-right: 24px;font-size: 16px;line-height: 27px; list-style: none;}
+.menu li a{list-style: none;text-decoration: none;}
 .menu li:hover{cursor: pointer; color: #f16529;}
 section{position: relative;margin: 0; padding: 2%;min-height: 400px;   /*background: -moz-linear-gradient(180deg, #f16529 0%, #f16529 100%);background: -webkit-linear-gradient(-90deg, #f16529 0%, #f16529   100%);*/    background: #f16529;}
 section article { padding:  2%;}

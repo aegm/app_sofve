@@ -36,7 +36,7 @@ ul.slides{width:1000px;height:350px;padding:0;margin:0;overflow:hidden}
 .customer-description{height:350px;margin:0 25px;position:relative;text-shadow:1px 1px 25px #000;width:148px}
 .customer-description p{bottom:23px;color:#fff;font-size:20px;line-height:26px;position:absolute;width:148px}
 .customer-description p>span{display:block;font-size:14px;line-height:20px}
-.gdhp-slide-wsb{background:url(//img1.wsimg.com/fos/hp/1/gdhp_slide_wsb.jpg) no-repeat}
+.gdhp-slide-wsb{ -webkit-box-shadow: 0 0px 10px #111 inset; background:  #fff;}
 /*colocando los fondos disponibles*/
 .gdhp-slide-outright{ -webkit-box-shadow: 0 0px 10px #111 inset; background: url(../img/pantalla.png)no-repeat left, #fff;}
 .gdhp-slide-co{background:url(//img1.wsimg.com/fos/hp/1/gdhp_slide_co.jpg) no-repeat}

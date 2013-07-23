@@ -11,11 +11,13 @@ namespace Contacto\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
+use Contacto\Form\Formulario;
 
 class ContactoController extends AbstractActionController
 {
     public function indexAction()
     {
-        return new ViewModel();
+        $form = new Formulario("form");
+        return new ViewModel(array("form"=>$form));
     }
 }

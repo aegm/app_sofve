@@ -11,13 +11,14 @@ namespace Contacto\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
-use Contacto\Form\Formulario;
+use Contacto\Form\Formularios;
+use Contacto\Model\Entity\Procesa;
 
 class ContactoController extends AbstractActionController
 {
     public function indexAction()
     {
-        $form = new Formulario("form");
-        return new ViewModel(array("form"=>$form));
+        $form = new Formularios('contacto');
+        return new ViewModel(array("titulo"=>"Formularios en ZF2","form"=>$form,'url'=>$this->getRequest()->getBaseUrl()));
     }
 }

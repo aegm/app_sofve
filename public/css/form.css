@@ -8,12 +8,13 @@
 	border-radius:6px;
 	margin:10px;
 	padding:5px;
+        background: #fff;
 	/*border-radius:54px 6px 54px 6px;*/
 }
 .form legend{
 	font-size:14px;
 	font-weight:bold;
-	color:#0099FF;
+	color:#042d41;
 }
 .form p{
 	margin:2px auto;

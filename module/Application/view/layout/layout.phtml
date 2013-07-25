@@ -2,7 +2,7 @@
 <html lang="es_ES">
     <head>
          <meta charset="UTF-8">
-        <?php echo $this->headTitle('Sofve.com ');?>
+        <?php echo $this->headTitle('Sofve.com || Diseño Web, Tecnologia, Resposive Design');?>
         <?php  $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0');
                $this->headMeta()->appendName('keywords', "php,formularios,dise�o, Desarrollo");
                $this->headMeta()->appendName('description', "Dise�o y Desarrollo de Sistemas Webs");
@@ -11,7 +11,8 @@
         <!--styles-->
         <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'img/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/icono.ico'))
                         ->prependStylesheet($this->basePath().'/css/estilo.css')
-                        ->prependStylesheet($this->basePath().'/css/cycle.min.css');  ?>
+                        ->prependStylesheet($this->basePath().'/css/cycle.min.css')
+                        ->prependStylesheet($this->basePath().'/css/form.css');  ?>
         <!--scripts-->
        
         <?php echo $this->headScript()->prependFile($this->basePath() . '/js/jquery.cycle.all.js')

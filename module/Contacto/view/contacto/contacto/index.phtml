@@ -1,4 +1,11 @@
-<h1>Formulario de Contacto</h1>
+<article>
+    <h1>
+        <div>
+            Formulario de Contacto
+            <div class="extensor">
+            </div>
+        </div>
+</h1>
 <?php
 $form = $this->form;
 $form->prepare();
@@ -10,7 +17,7 @@ $form->setAttribute('action', $this->url('application/formulario/recibe'));
 $form->setAttribute('method', 'post');
 */
 $form->setAttributes(array(
-    'action' => $this->url.'/contacto',
+    'action' => $this->url.'/contacto/recibe',
     'method' => 'post',
     'class'=>'form'
 ));
@@ -20,8 +27,10 @@ $formLabel = $this->plugin('formLabel');
 // Render the opening tag
 echo $this->form()->openTag($form);
 ?>
+    <p>
+        Para Consultas relacionadas a proyectos y  o actividades del mundo web escribenos y obten asesoria Tecnica de Nuestros especialistas..
+    </p>
 <fieldset class="externo">
-    <legend>Contacto</legend>
     <fieldset class="interno">
 <!--Una Forma de Imprimir Un elemento -->
 <p class="for-text">
@@ -63,13 +72,21 @@ echo $this->form()->openTag($form);
     //echo $this->formElementErrors($name);
 ?>
 </p>
+<p class="for-text">
+<?php
+    $comentario = $form->get('comentario');
+    echo $formLabel->openTag().$comentario->getOption('label')." ";
+    echo $formLabel->closeTag();
+    echo $this->formTextarea($comentario);
+    //echo $this->formElementErrors($name);
+?>
+</p>
 <!--Otra Forma de Imprimir un elementos-->
 <?php echo $this->formElement($form->get('send')) ?>
 
 <?php echo $this->form()->closeTag() ?>
     </fieldset>
 </fieldset>
-
-
+</article>
 
 

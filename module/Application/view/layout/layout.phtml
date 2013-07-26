@@ -1,9 +1,10 @@
 <?php echo $this->doctype(); ?>
 <html lang="es_ES">
     <head>
-         <meta charset="UTF-8">
+         <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
         <?php echo $this->headTitle('Sofve.com || Diseño Web, Tecnologia, Resposive Design');?>
-        <?php  $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0');
+        <?php  $this->headMeta()->appendName('author', "Angel Gonzalez");
+               $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0');
                $this->headMeta()->appendName('keywords', "php,formularios,dise�o, Desarrollo");
                $this->headMeta()->appendName('description', "Dise�o y Desarrollo de Sistemas Webs");
         echo $this->headMeta();
@@ -37,7 +38,7 @@
     <header>
         <div class="panel-lef">
             <div class="logo">
-                <img src="<?echo $this->basePath."img/sofve.png"?>" style="width: 80px; height: 60px;">
+                <img src="<?php echo $this->basePath()."/img/sofve.png"?>" style="width: 80px; height: 60px;">
             </div>
         </div>
         <div class="panel-righ">

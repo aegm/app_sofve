@@ -29,13 +29,13 @@ class Formularios extends Form
             'name'=>'send',
             'attributes'=>array(
                 'type'=>'submit',
-                'value'=>'enviar',
-                'title'=>'enviar',
+                'value'=>'Enviar',
+                'title'=>'Enviar',
                 'class'=>'btn-blue'
             ),
         ));
         
-         $factory = new Factory();
+        $factory = new Factory();
         $apellido = $factory->createElement(array(
             'type' => 'text',
             'name' => 'apellido',
@@ -68,11 +68,21 @@ class Formularios extends Form
            ),
            'attributes'=>array(
                 'type'=>'tel',
-                'required'=>'required',
-                'pattern'=>'^0[1-68]([-. ]?[0-9]{2}){4}$'
+                /*'required'=>'required',*/
+                //'pattern'=>'^0[1-68]([-. ]?[0-9]{2}){4}$'
                ),
        ));
        $this->add($telefono);
+       
+       $comentario = $factory->createElement(array(
+          'name'=>'comentario',
+           'type'=>'Zend\Form\Element\Textarea',
+           'options'=>array(
+               'label'=>'Comentario'
+           )
+       ));
+       
+       $this->add($comentario);
     }
 }
 ?>

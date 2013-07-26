@@ -29,10 +29,14 @@ header .panel-righ {width: 60%; float: right;}
 .menu li{float: left;margin-right: 24px;font-size: 16px;line-height: 27px; list-style: none;}
 .menu li a{list-style: none;text-decoration: none;}
 .menu li:hover{cursor: pointer; color: #f16529;}
-section{position: relative;margin: 0; padding: 2%;min-height: 400px;   /*background: -moz-linear-gradient(180deg, #f16529 0%, #f16529 100%);background: -webkit-linear-gradient(-90deg, #f16529 0%, #f16529   100%);*/    background: #f16529;}
-section article { padding:  2%;}
+section{position: relative;margin: 0; min-height: 400px;   /*background: -moz-linear-gradient(180deg, #f16529 0%, #f16529 100%);background: -webkit-linear-gradient(-90deg, #f16529 0%, #f16529   100%);*/    background: #f16529;}
+section article { padding-top: 2%; width: auto; margin: 0 auto; max-width: 1080px;}
+article p {color: white;}
+h1,h2,h3 {padding-left: 2%;}
+h1{font-family: Ubuntu,arial,sans-serif;font-weight: normal;font-size: 19px;line-height: 22px;color: #fff;text-transform: uppercase;margin: 0;clear: both;}
 article h2{font-weight: 700;text-align: center;font-size: 55px;margin: 0 0 16px;color: #fff;text-shadow: -2px 1px 1px rgba(0,0,0,.5); }
 article h3{text-align: center;color: #666;font-size: 38px; }
-
+h1 div{display: inline-block;background-color: #7db701;margin: 20px 0;padding: 10px 20px 10px 0;position: relative;}
+h1 div.extensor {display: block; position: absolute;top: -20px;width: 300px;height: 22px; right: 100%;}
 /*BOTONES*/
-.btn-blue{background:#042d41;color:#fff;cursor:pointer;display:inline-block;padding:13px 35px 11px;text-align:center; text-decoration:none; border: none;}
+.btn-blue{background:#ccc;color:#042d41;cursor:pointer;display:inline-block;padding:13px 35px 11px;text-align:center; text-decoration:none; border: none;}

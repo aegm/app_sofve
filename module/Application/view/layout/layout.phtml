@@ -1,12 +1,16 @@
 <?php echo $this->doctype(); ?>
-<html lang="es_ES">
+<html lang="es">
     <head>
          <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
         <?php echo $this->headTitle('Sofve.com || Diseño Web, Tecnologia, Resposive Design');?>
         <?php  $this->headMeta()->appendName('author', "Angel Gonzalez");
                $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0');
-               $this->headMeta()->appendName('keywords', "php,formularios,dise�o, Desarrollo");
-               $this->headMeta()->appendName('description', "Dise�o y Desarrollo de Sistemas Webs");
+               $this->headMeta()->appendName('keywords', "php,formularios,diseño, Desarrollo, soporte, Responsive Design, Diseño Web,");
+               $this->headMeta()->appendName('description', "Diseño y Desarrollo de Sistemas Webs");
+               $this->headMeta()->setProperty('og:title', "Sofve.com Tus Ideas Son Nuestra Ispiración");
+               $this->headMeta()->setProperty('og:type', "sitio web");
+               $this->headMeta()->setProperty('og:url', "http://www.sofve.com");
+               $this->headMeta()->setProperty('og:site_name', "SofVe");
         echo $this->headMeta();
         ?>
         <!--styles-->
@@ -31,14 +35,13 @@
               ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
               var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);
             })();
-
           </script>
     </head>
     <body>
     <header>
         <div class="panel-lef">
             <div class="logo">
-                <img src="<?php echo $this->basePath()."/img/sofve.png"?>" style="width: 80px; height: 60px;">
+                <img alt="sofve.com" src="<?php echo $this->basePath()."/img/sofve.png"?>" style="width: 80px; height: 60px;" />
             </div>
         </div>
         <div class="panel-righ">

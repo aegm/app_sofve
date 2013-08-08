@@ -1,7 +1,9 @@
 /*COLORES 
  *NARANJA #f16529
  *NARANJA OSCURO #e44d26
- *AZUL #042d41*/
+ *AZUL #042d41
+PALETA ##D3B194 CARNE #D8D8D8 GRIS, #CA6B0F NARANJA, #042D41 AZUL OSCURO
+*/
 @font-face {
   font-family: 'Dosis';
   font-style: normal;
@@ -20,8 +22,8 @@
   font-weight: 700;
   src: local('Dosis Bold'), local('Dosis-Bold'), url(http://themes.googleusercontent.com/static/fonts/dosis/v1/x-7NZTw0n-ypOAaIE8uSrvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
 }
-body{margin: 0;font-family: Dosis,Tahoma,sans-serif;}
-header{width: 100%;min-height: 65px;background: #fff;-webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);border-bottom: 1px #ad5a0d solid;box-shadow: 0 1px 10px rgba(0, 0, 0, 0.7);margin-bottom: 0;padding-bottom: 0;}
+body{margin: 0;font-family: Dosis,Tahoma,sans-serif;min-width: 1080px; max-width: 1700px;}
+header{width: 100%;min-height: 65px;background: #EFEFEF;-webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);border-bottom: 1px #ad5a0d solid;box-shadow: 0 1px 10px rgba(0, 0, 0, 0.7);margin-bottom: 0;padding-bottom: 0;}
 header .panel-lef {width: 30%; float: left;}
 header .panel-righ {width: 60%; float: right;}
 .panel-lef .logo {text-align: center;   }
@@ -29,8 +31,11 @@ header .panel-righ {width: 60%; float: right;}
 .menu li{float: left;margin-right: 24px;font-size: 16px;line-height: 27px; list-style: none;}
 .menu li a{list-style: none;text-decoration: none;}
 .menu li:hover{cursor: pointer; color: #f16529;}
-section{position: relative;margin: 0; min-height: 400px;   /*background: -moz-linear-gradient(180deg, #f16529 0%, #f16529 100%);background: -webkit-linear-gradient(-90deg, #f16529 0%, #f16529   100%);*/    background: #f16529;}
-section article { padding-top: 2%; width: auto; margin: 0 auto; max-width: 1080px;}
+section{position: relative;margin: 0; min-height: 400px;  background: #f16529;}
+section article { padding-top: 2%; width: 100%; margin: 0 auto; }
+.sliders{max-width: 1080px;}
+.noticias{min-width: 1080px; background: #fff;}
+.noticias h3{color:#e44d26; text-align: left; padding-left: 10%; }
 article p {color: white;}
 h1,h2,h3 {padding-left: 2%;}
 h1{font-family: Ubuntu,arial,sans-serif;font-weight: normal;font-size: 19px;line-height: 22px;color: #fff;text-transform: uppercase;margin: 0;clear: both;}
@@ -40,3 +45,5 @@ h1 div{display: inline-block;background-color: #7db701;margin: 20px 0;padding: 1
 h1 div.extensor {display: block; position: absolute;top: -20px;width: 300px;height: 22px; right: 100%;}
 /*BOTONES*/
 .btn-blue{background:#ccc;color:#042d41;cursor:pointer;display:inline-block;padding:13px 35px 11px;text-align:center; text-decoration:none; border: none;}
+footer{width: 100%; background: #EFEFEF; min-height: 120px; border-top: 1px solid #DDDDDD;}
+footer p{width: 80%; margin: 0 auto; text-align: left; font-size: 14px;}

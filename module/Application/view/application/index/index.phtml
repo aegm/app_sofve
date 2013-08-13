@@ -20,9 +20,26 @@
     </div>
     <br>
 </article>
+</article>
 <article class="registro">
-    
-    
+    <?php
+    $form = $this->form;
+    $form->setAttribute('action', $this->url('application', array('action' => 'registra')));
+    $form->prepare();
+    echo $this->form()->openTag($form);
+    /*
+    ?>
+    <fieldset class="externo">
+    <fieldset class="interno">
+    <?
+    $email = $form->get('email');
+    echo $formLabel->openTag().$email->getOption('label')." ";
+    echo $formLabel->closeTag();
+    echo $this->formInput($email);
+    echo $this->form()->closeTag();*/
+    ?>
+      </fieldset>
+</fieldset>
 </article>
 <article class="noticias">
     <h3>Recibe Nuestras Promociones y Servicios</h3>

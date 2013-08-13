@@ -11,12 +11,18 @@ namespace Application\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
+use Application\Form\Formularios;
 
 class IndexController extends AbstractActionController
 {
     public function indexAction()
     {
+        $form = new Formularios('registro');
         $url=$this->getRequest()->getBaseUrl();
-        return new ViewModel(array("url"=>$url));
+        return new ViewModel(array("url"=>$url,"form"=>$form));
+    }
+    
+    public function registraAction(){
+        
     }
 }

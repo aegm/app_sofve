@@ -1,14 +1,14 @@
 <?php
 namespace Application\Form;
 
-use Zend\Captcha\AdapterInterface as CapchaAdapter;
+use Zend\Captcha\AdapterInterface as CaptchaAdapter;
 use Zend\Form\Element;
 use Zend\Form\Form;
 
 use Zend\Captcha;
 use Zend\Form\Factory;
 
-class Formulario extends Form
+class Formularios extends Form
 {
     public function __construct($name = null, $options = array()) {
         
@@ -26,7 +26,7 @@ class Formulario extends Form
             ),  
         ));
         
-        $this->add($email);
+        $this->add($correo);
     }
 }
 ?>

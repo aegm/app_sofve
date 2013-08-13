@@ -38,8 +38,8 @@ section article { padding-top: 2%; width: 100%; margin: 0 auto; }
 .noticias h3{color:#e44d26; text-align: left; padding-left: 10%; }
 article p {color: white;}
 h1,h2,h3 {padding-left: 2%;}
-h1{font-family: Ubuntu,arial,sans-serif;font-weight: normal;color: #fff;text-transform: uppercase;margin: 0;clear: both;}
-article h1{font-weight: 700;text-align: center;font-size: 45px;margin: 0 0 16px;color: #fff;text-shadow: -2px 1px 1px rgba(0,0,0,.5); }
+h1{font-family: Ubuntu,arial,sans-serif;font-weight: normal;font-size: 19px;line-height: 22px;color: #fff;text-transform: uppercase;margin: 0;clear: both;}
+article h2{font-weight: 700;text-align: center;font-size: 55px;margin: 0 0 16px;color: #fff;text-shadow: -2px 1px 1px rgba(0,0,0,.5); }
 article h3{text-align: center;color: #666;font-size: 38px; }
 h1 div{display: inline-block;background-color: #7db701;margin: 20px 0;padding: 10px 20px 10px 0;position: relative;}
 h1 div.extensor {display: block; position: absolute;top: -20px;width: 300px;height: 22px; right: 100%;}

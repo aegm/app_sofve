@@ -37,6 +37,6 @@ class IndexController extends AbstractActionController
                 $procesa->exchangeArray ($form->getData ());
                 return $this->redirect()->toRoute('application');
             }
-        
+        return new ViewModel();
     }
 }

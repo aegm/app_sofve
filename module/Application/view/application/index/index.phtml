@@ -21,26 +21,40 @@
     <br>
 </article>
 </article>
-<article class="registro">
+<article class="conten">
     <?php
     $form = $this->form;
-    $form->setAttribute('action', $this->url('application', array('action' => 'registra')));
     $form->prepare();
+    $form->setAttributes(array(
+        'action'=>$this->url.'application/index/registra',
+        'method'=>'post',
+        'class'=>'forma'
+    ));
+    $formLabel = $this->plugin('formLabel');
     echo $this->form()->openTag($form);
-    /*
+    
     ?>
-    <fieldset class="externo">
-    <fieldset class="interno">
-    <?
-    $email = $form->get('email');
-    echo $formLabel->openTag().$email->getOption('label')." ";
-    echo $formLabel->closeTag();
-    echo $this->formInput($email);
-    echo $this->form()->closeTag();*/
-    ?>
-      </fieldset>
-</fieldset>
-</article>
-<article class="noticias">
     <h3>Recibe Nuestras Promociones y Servicios</h3>
+    <fieldset class="externo">
+        <fieldset class="interno">
+    <p class="for-text">
+        <?php
+                $email = $form->get('email');
+                echo $formLabel->openTag().$email->getOption('label')." ";
+                echo $formLabel->closeTag();
+                echo $this->formInput($email);
+        ?>
+        </p>
+        <?php 
+               echo $this->formElement($form->get('send'))
+        ?>
+        </fieldset>
+    </fieldset>
+    <h1>
+    <div>
+        Noticias de La Semana
+        <div class="extensor">
+        </div>
+    </div>
+    </h1>
 </article>

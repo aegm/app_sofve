@@ -57,3 +57,17 @@
 }
 .form .adicional{
 	margin:0px 0px 0px 10px;}
+
+.forma .externo{
+    width: 40%;
+    border: none;
+    color: #666;
+    padding-left: 9%;
+}
+
+.forma .interno{border: none;}
+.forma label{color: #666;}
+.forma .input{border: 1px solid #FF9E4C;
+border-radius: 3px;
+padding: 6px 5px;
+font-size: 1em;}

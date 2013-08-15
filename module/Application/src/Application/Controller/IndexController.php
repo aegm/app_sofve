@@ -12,6 +12,7 @@ namespace Application\Controller;
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 use Application\Form\Formularios;
+use Application\Model\Entity\Procesa;
 
 class IndexController extends AbstractActionController
 {
@@ -23,6 +24,19 @@ class IndexController extends AbstractActionController
     }
     
     public function registraAction(){
+        $form = new Formularios('registro');
+        $request = $this->getRequest();
+        if($request->isPost())
+            $procesa = new Procesa();
+            $form->setInputFilter($procesa->getInputFilter());
+            $form->setData($request->getPost());
+            
+            if($form->isValid())
+            {
+                
+                $procesa->exchangeArray ($form->getData ());
+                return $this->redirect()->toRoute('application');
+            }
         
     }
 }

@@ -5,23 +5,21 @@
  * and open the template in the editor.
  */
 namespace Application\Model\Entity;
+// Add these import statements
 use Zend\InputFilter\Factory as InputFactory;
 use Zend\InputFilter\InputFilter;
 use Zend\InputFilter\InputFilterAwareInterface;
 use Zend\InputFilter\InputFilterInterface;
+
 class Procesa implements InputFilterAwareInterface
 {
     private $correo;
     protected $inputFilter;
 
 
-    public function __construct() {
-        
-    }
-    
      public function exchangeArray($data)
     {
-        $this->$correo     = (isset($data['email']))     ? $data['email']     : null;
+        $this->correo     = (isset($data['email']))     ? $data['email']     : null;
         
     }
     
@@ -41,6 +39,10 @@ class Procesa implements InputFilterAwareInterface
         }
         
         return $this->inputFilter;
+    }
+
+    public function setInputFilter(InputFilterInterface $inputFilter) {
+        
     }
     
 }

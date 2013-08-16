@@ -13,9 +13,13 @@ use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 use Application\Form\Formularios;
 use Application\Model\Entity\Procesa;
+use Zend\Db\ResultSet\ResultSet;
+use Zend\Db\Adapter\Adapter;
+use Zend\Db\Sql\Sql;
 
 class IndexController extends AbstractActionController
 {
+    public $dbadpter;
     public function indexAction()
     {
         $form = new Formularios('registro');
@@ -27,16 +31,46 @@ class IndexController extends AbstractActionController
         $form = new Formularios('registro');
         $request = $this->getRequest();
         if($request->isPost())
-            $procesa = new Procesa();
-            $form->setInputFilter($procesa->getInputFilter());
+            $procesar = new Procesa();
+            $form->setInputFilter($procesar->getInputFilter());
             $form->setData($request->getPost());
             
             if($form->isValid())
             {
-                
-                $procesa->exchangeArray ($form->getData ());
+                $procesar->exchangeArray ($form->getData ());
+     
                 return $this->redirect()->toRoute('application');
             }
         return new ViewModel();
     }
+    
+    //metodo creado para traer datos desde el controlador
+    public function resultAction(){
+        $this->dbadpter = $this->getServiceLocator()->get('Zend\Db\Adapter');
+        //var_dump($this->dbadpter);
+        $result = $this->dbadpter->query("select * from sofve_usuarios",  Adapter::QUERY_MODE_EXECUTE);
+        $datos = $result->toArray();
+        return new ViewModel(array('titulo'=>'conectandonos usando result set','datos'=>$datos));
+    }
+    
+    public function sqlAction()
+    {
+        $this->dbadpter = $this->getServiceLocator()->get('Zend\Db\Adapter');
+         $sql = new Sql($this->dbadpter);
+        $select = $sql->select()
+                      ->from("sofve_usuarios")
+                      ->order('id_usuarios desc');
+          $selectString = $sql->getSqlStringForSqlObject($select);
+        //echo $selectString;
+        $result= $this->dbadpter->query($selectString, Adapter::QUERY_MODE_EXECUTE);
+        $datos=$result->toArray();
+        return new ViewModel(array("titulo"=>"Conectarse a MySQL usando sql","datos"=>$datos));
+    
+    }
+    
+    
+    //
+    
+    //
+    
 }

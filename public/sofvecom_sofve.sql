@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50170
 File Encoding         : 65001
 
-Date: 2013-08-02 10:23:14
+Date: 2013-08-16 11:15:19
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -32,4 +32,21 @@ CREATE TABLE `sofve_post` (
 
 -- ----------------------------
 -- Records of sofve_post
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for sofve_usuarios
+-- ----------------------------
+DROP TABLE IF EXISTS `sofve_usuarios`;
+CREATE TABLE `sofve_usuarios` (
+  `id_usuarios` int(11) NOT NULL,
+  `usuario` varchar(50) NOT NULL,
+  `clave` varchar(32) NOT NULL,
+  `email` varchar(20) NOT NULL,
+  `tipo_usuario` int(2) NOT NULL,
+  PRIMARY KEY (`id_usuarios`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Records of sofve_usuarios
 -- ----------------------------

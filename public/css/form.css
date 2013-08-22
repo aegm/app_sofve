@@ -59,7 +59,7 @@
 	margin:0px 0px 0px 10px;}
 
 .forma .externo{
-    width: 40%;
+    width: 60%;
     border: none;
     color: #666;
     padding-left: 9%;
@@ -71,3 +71,5 @@
 border-radius: 3px;
 padding: 6px 5px;
 font-size: 1em;}
+.forma p{display: 
+inline-block;}

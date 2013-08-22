@@ -12,38 +12,54 @@ namespace Application\Controller;
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 use Application\Form\Formularios;
-use Application\Model\Entity\Procesa;
-use Zend\Db\ResultSet\ResultSet;
+//use Zend\Db\ResultSet\ResultSet;
 use Zend\Db\Adapter\Adapter;
-use Zend\Db\Sql\Sql;
+//use Zend\Db\Sql\Sql;
+use Application\Model\Entity\Usuarios;
+use Application\Model\Entity\Procesa;
+use Application\Model\Entity\Noticias;
 
 class IndexController extends AbstractActionController
 {
     public $dbadpter;
     public function indexAction()
     {
-        $form = new Formularios('registro');
+       $form = new Formularios('registro');
         $url=$this->getRequest()->getBaseUrl();
-        return new ViewModel(array("url"=>$url,"form"=>$form));
+        $this->dbAdapter=$this->getServiceLocator()->get('Zend\Db\Adapter');
+        $n=new Noticias($this->dbAdapter);
+        $post = $n->getNoticias();
+        //print_r($post);
+        return new ViewModel(array("url"=>$url,"form"=>$form,"post"=>$post));
     }
     
     public function registraAction(){
         $form = new Formularios('registro');
         $request = $this->getRequest();
-        if($request->isPost())
+        $this->dbAdapter=$this->getServiceLocator()->get('Zend\Db\Adapter');
+         if($request->isPost())
             $procesar = new Procesa();
             $form->setInputFilter($procesar->getInputFilter());
             $form->setData($request->getPost());
-            
+             
             if($form->isValid())
-            {
                 $procesar->exchangeArray ($form->getData ());
-     
-                return $this->redirect()->toRoute('application');
-            }
-        return new ViewModel();
+                $this->dbAdapter=$this->getServiceLocator()->get('Zend\Db\Adapter');
+                $u=new Usuarios($this->dbAdapter);
+                //echo $procesar->correo;
+                $data = array(
+                                'usuario'=>'usr_'.mktime(),
+                                'clave'=>'1234',
+                                'email'=>"$procesar->correo",
+                                'tipo_usuario'=>'1'
+                                );
+                $u->addUsr($data);
+              
+                return new ViewModel($datos);
+            
+        
+       
     }
-    
     //metodo creado para traer datos desde el controlador
     public function resultAction(){
         $this->dbadpter = $this->getServiceLocator()->get('Zend\Db\Adapter');
@@ -67,6 +83,9 @@ class IndexController extends AbstractActionController
         return new ViewModel(array("titulo"=>"Conectarse a MySQL usando sql","datos"=>$datos));
     
     }
+    
+    
+    
     
     
     //

@@ -13,7 +13,7 @@ use Zend\InputFilter\InputFilterInterface;
 
 class Procesa implements InputFilterAwareInterface
 {
-    private $correo;
+    public $correo;
     protected $inputFilter;
 
 
@@ -46,4 +46,4 @@ class Procesa implements InputFilterAwareInterface
     }
     
 }
-?>
+

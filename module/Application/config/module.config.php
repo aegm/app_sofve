@@ -20,6 +20,13 @@ return array(
                     ),
                 ),
             ),
+            'noticia'=>array(
+              'type'=>'Segment',
+              'options'=> array(
+                  'route' => '/application/noticia[/[:action]]',
+                  
+              )  
+            ),
             // The following is a route to simplify getting started creating
             // new controllers and actions without needing to create a new
             // module. Simply drop new controllers in, and you can access them
@@ -71,7 +78,8 @@ return array(
     ),
     'controllers' => array(
         'invokables' => array(
-            'Application\Controller\Index' => 'Application\Controller\IndexController'
+            'Application\Controller\Index' => 'Application\Controller\IndexController',
+            'Application\Controller\Noticia' => 'Application\Controller\NoticiaController'
         ),
     ),
     'view_manager' => array(
@@ -88,6 +96,7 @@ return array(
         ),
         'template_path_stack' => array(
             __DIR__ . '/../view',
+            'noticia ' => __DIR__ . '/../view',
         ),
     ),
 );

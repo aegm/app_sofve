@@ -27,7 +27,6 @@
     </div>
     <br>
 </article>
-</article>
 <article class="conten">
     <?php
     $form = $this->form;
@@ -72,19 +71,23 @@
         foreach ($this->post as $datos)
         {
         ?>
+        <div class="line"></div>
         <div class="post">
             <div class="cobertor">
-            <div class="post-title">
-                <?php echo $datos['titulo_post'];?>
+            <div class="post-img">
+                <img src="<?php echo $this->url.'/img/sofve.png'?>"/>
             </div>
             <div class="post-cuerpo">
-                <?php echo $datos['contenido_post'];?>
+                <div class="title"><?php echo $datos['titulo_post'];?></div>
+                <div class="content"><p><?php echo $datos['contenido_post'];?></p></div>  
             </div>
-            </div>    
+                <div style="clear: both"></div>
+            </div>
+           
         </div>  
         
         <?php
         }
-    ?>
-    </    
+    ?>  
+    <div style="clear: both"></div>
 </article>

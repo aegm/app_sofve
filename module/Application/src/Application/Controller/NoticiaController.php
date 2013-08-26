@@ -11,6 +11,7 @@ use Zend\View\Model\ViewModel;
 class NoticiaController extends AbstractActionController
 {
     public function indexAction() {
-         return new ViewModel();
+        $url=$this->getRequest()->getBaseUrl();
+         return new ViewModel(array('url'=>$url));
     }
 }

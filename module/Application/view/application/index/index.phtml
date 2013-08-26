@@ -41,7 +41,8 @@
     
     ?>
     <h3>Recibe Nuestras Promociones y Servicios</h3>
-    <p>Si quieres participar en la rifa de tu Sitio Web registrate en Sofve y estaras participando en el sorteo ademas podras recibir toda la informacion de Interes referente al mundo de la Tecnologia..</p>
+    <p>Si quieres  recibir Información de Nuestros Productos, Servicios y ademas enterarte de todas las novedades en el mundo de la tecnologia Suscribite...  <br> 
+       ademas podras recibir toda la informacion de Interes referente al mundo de la Tecnologia..</p>
     <fieldset class="externo">
         <fieldset class="interno">
     <p class="for-text">
@@ -66,28 +67,29 @@
         </div>
     </div>
     </h1>
-    
+    <div class="line"></div>
     <?php 
         foreach ($this->post as $datos)
         {
         ?>
-        <div class="line"></div>
         <div class="post">
             <div class="cobertor">
             <div class="post-img">
-                <img src="<?php echo $this->url.'/img/sofve.png'?>"/>
+                <img src="<?php echo $this->url.$datos['img_post']?>"/>
             </div>
             <div class="post-cuerpo">
-                <div class="title"><?php echo $datos['titulo_post'];?></div>
+                <div class="title">
+                    <h3><?php echo strtoupper($datos['titulo_post']);?></h3>
+                </div>
                 <div class="content"><p><?php echo $datos['contenido_post'];?></p></div>  
+                <span class="hipper-link"><a href="#">Leer Mas</a></span>
             </div>
                 <div style="clear: both"></div>
             </div>
            
         </div>  
-        
         <?php
         }
-    ?>  
+        ?>  
     <div style="clear: both"></div>
 </article>

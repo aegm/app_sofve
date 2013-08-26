@@ -7,6 +7,7 @@
 namespace Application\Model\Entity;
 use Zend\Db\TableGateway\TableGateway;
 use Zend\Db\Adapter\Adapter;
+use Zend\Form\Annotation;
 //use Zend\Db\ResultSet\ResultSet;
 
 class  Usuarios extends TableGateway

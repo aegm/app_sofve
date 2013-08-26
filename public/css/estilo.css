@@ -45,15 +45,21 @@ article h3{text-align: center;color: #666;font-size: 38px; }
 h1 div{display: inline-block;background-color: #7db701;margin: 20px 0;padding: 10px 20px 10px 0;position: relative;}
 h1 div.extensor {display: block; position: absolute;top: -20px;width: 300px;height: 22px; right: 100%;}
 
-article .post{width: 700px;margin: 20px 20px 20px 20px;border-top: 1px solid #ddd;}
+article .post{width: 370px;margin-left:10%;border-top: 1px solid #ddd; float: left;position: relative;}
 article .post .cobertor{}
-article .post .post-img{width: 30%;float: left;background: #ddd;margin: 1%;max-height: 160px; }
-.post-img img {width: 100%;height: 160px;}
-article .post .post-cuerpo{ width: 65%; margin: 1%;float: right; min-height: 160px;}
-article .post .post-cuerpo:hover{background-color: #ccc;cursor: pointer;}
-article .post .post-cuerpo .title{color:#e44d26; font-weight: 500; margin: 1%; }
+article .post .post-img{width: 100%;float: left;background: #ddd;margin: 1%;max-height: 160px; }
+article .post .post-img:hover{border:2px solid #e44d26;}
+.post-img img {width: 98%;height:150px; margin: 1%;}
+article .post .post-cuerpo{ width: 100%; margin: 1%;float: right; min-height: 160px;}
+/*article .post .post-cuerpo:hover{background-color: #ccc;cursor: pointer;}*/
+article .post .post-cuerpo .title{color:#e44d26; font-weight: 500; margin: 1%;}
+.title h3{font-size: 20px; color: #e44d26;}
 article .post .post-cuerpo .content{ margin: 1%; }
-
+.content p {text-align: justify;}
+.line{width: 90%;margin: 2%;border: 1px solid #ddd;}
+.noticia,  .header, .section, .article, .footer {width: 90%;margin: 2%;}
+.header .title{}
+.hipper-link{float: right;}
 /*.post {width: 700px; margin: 20px 20px 20px 20px;background-color: #DDDDDD; }
 .post .cobertor{background-color: #DDDDDD;
 -webkit-transition: background-color 0.2s ease-in-out;

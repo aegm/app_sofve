@@ -32,7 +32,7 @@ class IndexController extends AbstractActionController
         //print_r($post);
         return new ViewModel(array("url"=>$url,"form"=>$form,"post"=>$post));
     }
-    
+
     public function registraAction(){
         $form = new Formularios('registro');
         $request = $this->getRequest();
@@ -41,7 +41,7 @@ class IndexController extends AbstractActionController
             $procesar = new Procesa();
             $form->setInputFilter($procesar->getInputFilter());
             $form->setData($request->getPost());
-             
+
             if($form->isValid())
                 $procesar->exchangeArray ($form->getData ());
                 $this->dbAdapter=$this->getServiceLocator()->get('Zend\Db\Adapter');
@@ -54,11 +54,11 @@ class IndexController extends AbstractActionController
                                 'tipo_usuario'=>'1'
                                 );
                 $u->addUsr($data);
-              
+
                 return new ViewModel($datos);
-            
-        
-       
+
+
+
     }
     //metodo creado para traer datos desde el controlador
     public function resultAction(){
@@ -68,10 +68,10 @@ class IndexController extends AbstractActionController
         $datos = $result->toArray();
         return new ViewModel(array('titulo'=>'conectandonos usando result set','datos'=>$datos));
     }
-    
+
     public function sqlAction()
     {
-        $this->dbadpter = $this->getServiceLocator()->get('Zend\Db\Adapter');
+		$this->dbadpter = $this->getServiceLocator()->get('Zend\Db\Adapter');
          $sql = new Sql($this->dbadpter);
         $select = $sql->select()
                       ->from("sofve_usuarios")
@@ -81,15 +81,15 @@ class IndexController extends AbstractActionController
         $result= $this->dbadpter->query($selectString, Adapter::QUERY_MODE_EXECUTE);
         $datos=$result->toArray();
         return new ViewModel(array("titulo"=>"Conectarse a MySQL usando sql","datos"=>$datos));
-    
+
     }
-    
-    
-    
-    
-    
+
+
+
+
+
     //
-    
+
     //
-    
+
 }

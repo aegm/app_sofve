@@ -1,0 +1,196 @@
+[10-Jul-2013 11:30:46] PHP Fatal error:  Uncaught exception 'RuntimeException' with message 'Unable to load ZF2. Run `php composer.phar install` or define a ZF2_PATH environment variable.' in /home/sofvecom/public_html/app_sofve/init_autoloader.php:48
+Stack trace:
+#0 /home/sofvecom/public_html/app_sofve/public/index.php(9): require()
+#1 {main}
+  thrown in /home/sofvecom/public_html/app_sofve/init_autoloader.php on line 48
+[10-Jul-2013 11:35:49] PHP Fatal error:  Uncaught exception 'RuntimeException' with message 'Unable to load ZF2. Run `php composer.phar install` or define a ZF2_PATH environment variable.' in /home/sofvecom/public_html/app_sofve/init_autoloader.php:48
+Stack trace:
+#0 /home/sofvecom/public_html/app_sofve/public/index.php(9): require()
+#1 {main}
+  thrown in /home/sofvecom/public_html/app_sofve/init_autoloader.php on line 48
+[10-Jul-2013 11:38:40] PHP Fatal error:  Uncaught exception 'RuntimeException' with message 'Unable to load ZF2. Run `php composer.phar install` or define a ZF2_PATH environment variable.' in /home/sofvecom/public_html/app_sofve/init_autoloader.php:48
+Stack trace:
+#0 /home/sofvecom/public_html/app_sofve/public/index.php(9): require()
+#1 {main}
+  thrown in /home/sofvecom/public_html/app_sofve/init_autoloader.php on line 48
+[10-Jul-2013 11:38:44] PHP Fatal error:  Uncaught exception 'RuntimeException' with message 'Unable to load ZF2. Run `php composer.phar install` or define a ZF2_PATH environment variable.' in /home/sofvecom/public_html/app_sofve/init_autoloader.php:48
+Stack trace:
+#0 /home/sofvecom/public_html/app_sofve/public/index.php(9): require()
+#1 {main}
+  thrown in /home/sofvecom/public_html/app_sofve/init_autoloader.php on line 48
+[10-Jul-2013 12:54:13] PHP Fatal error:  Class 'Zend\ServiceManager\ServiceManager' not found in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/Mvc/Application.php on line 251
+[10-Jul-2013 13:05:42] PHP Fatal error:  Class 'Zend\Stdlib\AbstractOptions' not found in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/Listener/ListenerOptions.php on line 19
+[10-Jul-2013 13:05:49] PHP Fatal error:  Class 'Zend\Stdlib\AbstractOptions' not found in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/Listener/ListenerOptions.php on line 19
+[10-Jul-2013 13:08:15] PHP Fatal error:  Class 'Zend\Stdlib\AbstractOptions' not found in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/Listener/ListenerOptions.php on line 19
+[10-Jul-2013 13:11:12] PHP Fatal error:  Interface 'Zend\Stdlib\ParameterObjectInterface' not found in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/Stdlib/AbstractOptions.php on line 15
+[10-Jul-2013 13:14:34] PHP Fatal error:  Uncaught exception 'Zend\ModuleManager\Exception\RuntimeException' with message 'Module (Users) could not be initialized.' in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php:175
+Stack trace:
+#0 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(149): Zend\ModuleManager\ModuleManager->loadModuleByName(Object(Zend\ModuleManager\ModuleEvent))
+#1 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(90): Zend\ModuleManager\ModuleManager->loadModule('Users')
+#2 [internal function]: Zend\ModuleManager\ModuleManager->onLoadModules(Object(Zend\ModuleManager\ModuleEvent))
+#3 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(468): call_user_func(Array, Object(Zend\ModuleManager\ModuleEvent))
+#4 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframe in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php on line 175
+[10-Jul-2013 13:22:43] PHP Fatal error:  Uncaught exception 'Zend\ModuleManager\Exception\RuntimeException' with message 'Module (Users) could not be initialized.' in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php:175
+Stack trace:
+#0 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(149): Zend\ModuleManager\ModuleManager->loadModuleByName(Object(Zend\ModuleManager\ModuleEvent))
+#1 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(90): Zend\ModuleManager\ModuleManager->loadModule('Users')
+#2 [internal function]: Zend\ModuleManager\ModuleManager->onLoadModules(Object(Zend\ModuleManager\ModuleEvent))
+#3 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(468): call_user_func(Array, Object(Zend\ModuleManager\ModuleEvent))
+#4 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframe in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php on line 175
+[10-Jul-2013 13:31:21] PHP Fatal error:  Uncaught exception 'Zend\ModuleManager\Exception\RuntimeException' with message 'Module (Users) could not be initialized.' in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php:175
+Stack trace:
+#0 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(149): Zend\ModuleManager\ModuleManager->loadModuleByName(Object(Zend\ModuleManager\ModuleEvent))
+#1 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(90): Zend\ModuleManager\ModuleManager->loadModule('Users')
+#2 [internal function]: Zend\ModuleManager\ModuleManager->onLoadModules(Object(Zend\ModuleManager\ModuleEvent))
+#3 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(468): call_user_func(Array, Object(Zend\ModuleManager\ModuleEvent))
+#4 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframe in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php on line 175
+[10-Jul-2013 13:35:26] PHP Fatal error:  Uncaught exception 'Zend\ModuleManager\Exception\RuntimeException' with message 'Module (Users) could not be initialized.' in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php:175
+Stack trace:
+#0 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(149): Zend\ModuleManager\ModuleManager->loadModuleByName(Object(Zend\ModuleManager\ModuleEvent))
+#1 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(90): Zend\ModuleManager\ModuleManager->loadModule('Users')
+#2 [internal function]: Zend\ModuleManager\ModuleManager->onLoadModules(Object(Zend\ModuleManager\ModuleEvent))
+#3 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(468): call_user_func(Array, Object(Zend\ModuleManager\ModuleEvent))
+#4 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframe in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php on line 175
+[10-Jul-2013 13:42:41] PHP Fatal error:  Uncaught exception 'Zend\ModuleManager\Exception\RuntimeException' with message 'Module (Users) could not be initialized.' in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php:175
+Stack trace:
+#0 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(149): Zend\ModuleManager\ModuleManager->loadModuleByName(Object(Zend\ModuleManager\ModuleEvent))
+#1 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(90): Zend\ModuleManager\ModuleManager->loadModule('Users')
+#2 [internal function]: Zend\ModuleManager\ModuleManager->onLoadModules(Object(Zend\ModuleManager\ModuleEvent))
+#3 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(468): call_user_func(Array, Object(Zend\ModuleManager\ModuleEvent))
+#4 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframe in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php on line 175
+[10-Jul-2013 13:46:49] PHP Fatal error:  Uncaught exception 'Zend\ModuleManager\Exception\RuntimeException' with message 'Module (Users) could not be initialized.' in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php:175
+Stack trace:
+#0 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(149): Zend\ModuleManager\ModuleManager->loadModuleByName(Object(Zend\ModuleManager\ModuleEvent))
+#1 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(90): Zend\ModuleManager\ModuleManager->loadModule('Users')
+#2 [internal function]: Zend\ModuleManager\ModuleManager->onLoadModules(Object(Zend\ModuleManager\ModuleEvent))
+#3 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(468): call_user_func(Array, Object(Zend\ModuleManager\ModuleEvent))
+#4 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframe in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php on line 175
+[10-Jul-2013 13:52:45] PHP Fatal error:  Uncaught exception 'Zend\ModuleManager\Exception\RuntimeException' with message 'Module (Users) could not be initialized.' in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php:175
+Stack trace:
+#0 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(149): Zend\ModuleManager\ModuleManager->loadModuleByName(Object(Zend\ModuleManager\ModuleEvent))
+#1 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(90): Zend\ModuleManager\ModuleManager->loadModule('Users')
+#2 [internal function]: Zend\ModuleManager\ModuleManager->onLoadModules(Object(Zend\ModuleManager\ModuleEvent))
+#3 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(468): call_user_func(Array, Object(Zend\ModuleManager\ModuleEvent))
+#4 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframe in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php on line 175
+[10-Jul-2013 13:52:46] PHP Fatal error:  Uncaught exception 'Zend\ModuleManager\Exception\RuntimeException' with message 'Module (Users) could not be initialized.' in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php:175
+Stack trace:
+#0 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(149): Zend\ModuleManager\ModuleManager->loadModuleByName(Object(Zend\ModuleManager\ModuleEvent))
+#1 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(90): Zend\ModuleManager\ModuleManager->loadModule('Users')
+#2 [internal function]: Zend\ModuleManager\ModuleManager->onLoadModules(Object(Zend\ModuleManager\ModuleEvent))
+#3 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(468): call_user_func(Array, Object(Zend\ModuleManager\ModuleEvent))
+#4 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframe in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php on line 175
+[10-Jul-2013 13:52:47] PHP Fatal error:  Uncaught exception 'Zend\ModuleManager\Exception\RuntimeException' with message 'Module (Users) could not be initialized.' in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php:175
+Stack trace:
+#0 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(149): Zend\ModuleManager\ModuleManager->loadModuleByName(Object(Zend\ModuleManager\ModuleEvent))
+#1 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(90): Zend\ModuleManager\ModuleManager->loadModule('Users')
+#2 [internal function]: Zend\ModuleManager\ModuleManager->onLoadModules(Object(Zend\ModuleManager\ModuleEvent))
+#3 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(468): call_user_func(Array, Object(Zend\ModuleManager\ModuleEvent))
+#4 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframe in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php on line 175
+[10-Jul-2013 13:52:49] PHP Fatal error:  Uncaught exception 'Zend\ModuleManager\Exception\RuntimeException' with message 'Module (Users) could not be initialized.' in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php:175
+Stack trace:
+#0 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(149): Zend\ModuleManager\ModuleManager->loadModuleByName(Object(Zend\ModuleManager\ModuleEvent))
+#1 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(90): Zend\ModuleManager\ModuleManager->loadModule('Users')
+#2 [internal function]: Zend\ModuleManager\ModuleManager->onLoadModules(Object(Zend\ModuleManager\ModuleEvent))
+#3 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(468): call_user_func(Array, Object(Zend\ModuleManager\ModuleEvent))
+#4 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframe in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php on line 175
+[10-Jul-2013 13:53:18] PHP Fatal error:  Uncaught exception 'Zend\ModuleManager\Exception\RuntimeException' with message 'Module (Users) could not be initialized.' in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php:175
+Stack trace:
+#0 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(149): Zend\ModuleManager\ModuleManager->loadModuleByName(Object(Zend\ModuleManager\ModuleEvent))
+#1 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(90): Zend\ModuleManager\ModuleManager->loadModule('Users')
+#2 [internal function]: Zend\ModuleManager\ModuleManager->onLoadModules(Object(Zend\ModuleManager\ModuleEvent))
+#3 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(468): call_user_func(Array, Object(Zend\ModuleManager\ModuleEvent))
+#4 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframe in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php on line 175
+[10-Jul-2013 13:59:26] PHP Fatal error:  Uncaught exception 'Zend\ModuleManager\Exception\RuntimeException' with message 'Module (Users) could not be initialized.' in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php:175
+Stack trace:
+#0 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(149): Zend\ModuleManager\ModuleManager->loadModuleByName(Object(Zend\ModuleManager\ModuleEvent))
+#1 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(90): Zend\ModuleManager\ModuleManager->loadModule('Users')
+#2 [internal function]: Zend\ModuleManager\ModuleManager->onLoadModules(Object(Zend\ModuleManager\ModuleEvent))
+#3 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(468): call_user_func(Array, Object(Zend\ModuleManager\ModuleEvent))
+#4 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframe in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php on line 175
+[10-Jul-2013 13:59:28] PHP Fatal error:  Uncaught exception 'Zend\ModuleManager\Exception\RuntimeException' with message 'Module (Users) could not be initialized.' in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php:175
+Stack trace:
+#0 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(149): Zend\ModuleManager\ModuleManager->loadModuleByName(Object(Zend\ModuleManager\ModuleEvent))
+#1 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(90): Zend\ModuleManager\ModuleManager->loadModule('Users')
+#2 [internal function]: Zend\ModuleManager\ModuleManager->onLoadModules(Object(Zend\ModuleManager\ModuleEvent))
+#3 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(468): call_user_func(Array, Object(Zend\ModuleManager\ModuleEvent))
+#4 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframe in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php on line 175
+[10-Jul-2013 14:01:36] PHP Fatal error:  Uncaught exception 'Zend\ModuleManager\Exception\RuntimeException' with message 'Module (Users) could not be initialized.' in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php:175
+Stack trace:
+#0 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(149): Zend\ModuleManager\ModuleManager->loadModuleByName(Object(Zend\ModuleManager\ModuleEvent))
+#1 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(90): Zend\ModuleManager\ModuleManager->loadModule('Users')
+#2 [internal function]: Zend\ModuleManager\ModuleManager->onLoadModules(Object(Zend\ModuleManager\ModuleEvent))
+#3 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(468): call_user_func(Array, Object(Zend\ModuleManager\ModuleEvent))
+#4 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframe in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php on line 175
+[10-Jul-2013 14:01:39] PHP Fatal error:  Uncaught exception 'Zend\ModuleManager\Exception\RuntimeException' with message 'Module (Users) could not be initialized.' in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php:175
+Stack trace:
+#0 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(149): Zend\ModuleManager\ModuleManager->loadModuleByName(Object(Zend\ModuleManager\ModuleEvent))
+#1 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(90): Zend\ModuleManager\ModuleManager->loadModule('Users')
+#2 [internal function]: Zend\ModuleManager\ModuleManager->onLoadModules(Object(Zend\ModuleManager\ModuleEvent))
+#3 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(468): call_user_func(Array, Object(Zend\ModuleManager\ModuleEvent))
+#4 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframe in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php on line 175
+[10-Jul-2013 14:01:39] PHP Fatal error:  Uncaught exception 'Zend\ModuleManager\Exception\RuntimeException' with message 'Module (Users) could not be initialized.' in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php:175
+Stack trace:
+#0 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(149): Zend\ModuleManager\ModuleManager->loadModuleByName(Object(Zend\ModuleManager\ModuleEvent))
+#1 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(90): Zend\ModuleManager\ModuleManager->loadModule('Users')
+#2 [internal function]: Zend\ModuleManager\ModuleManager->onLoadModules(Object(Zend\ModuleManager\ModuleEvent))
+#3 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(468): call_user_func(Array, Object(Zend\ModuleManager\ModuleEvent))
+#4 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframe in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php on line 175
+[10-Jul-2013 14:03:13] PHP Fatal error:  Uncaught exception 'Zend\ModuleManager\Exception\RuntimeException' with message 'Module (Users) could not be initialized.' in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php:175
+Stack trace:
+#0 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(149): Zend\ModuleManager\ModuleManager->loadModuleByName(Object(Zend\ModuleManager\ModuleEvent))
+#1 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(90): Zend\ModuleManager\ModuleManager->loadModule('Users')
+#2 [internal function]: Zend\ModuleManager\ModuleManager->onLoadModules(Object(Zend\ModuleManager\ModuleEvent))
+#3 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(468): call_user_func(Array, Object(Zend\ModuleManager\ModuleEvent))
+#4 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframe in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php on line 175
+[10-Jul-2013 14:03:13] PHP Fatal error:  Uncaught exception 'Zend\ModuleManager\Exception\RuntimeException' with message 'Module (Users) could not be initialized.' in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php:175
+Stack trace:
+#0 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(149): Zend\ModuleManager\ModuleManager->loadModuleByName(Object(Zend\ModuleManager\ModuleEvent))
+#1 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(90): Zend\ModuleManager\ModuleManager->loadModule('Users')
+#2 [internal function]: Zend\ModuleManager\ModuleManager->onLoadModules(Object(Zend\ModuleManager\ModuleEvent))
+#3 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(468): call_user_func(Array, Object(Zend\ModuleManager\ModuleEvent))
+#4 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframe in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php on line 175
+[10-Jul-2013 14:03:24] PHP Fatal error:  Uncaught exception 'Zend\ModuleManager\Exception\RuntimeException' with message 'Module (Users) could not be initialized.' in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php:175
+Stack trace:
+#0 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(149): Zend\ModuleManager\ModuleManager->loadModuleByName(Object(Zend\ModuleManager\ModuleEvent))
+#1 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(90): Zend\ModuleManager\ModuleManager->loadModule('Users')
+#2 [internal function]: Zend\ModuleManager\ModuleManager->onLoadModules(Object(Zend\ModuleManager\ModuleEvent))
+#3 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(468): call_user_func(Array, Object(Zend\ModuleManager\ModuleEvent))
+#4 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframe in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php on line 175
+[15-Jul-2013 16:03:06] PHP Fatal error:  Uncaught exception 'Zend\ModuleManager\Exception\RuntimeException' with message 'Module (Contacto) could not be initialized.' in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php:175
+Stack trace:
+#0 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(149): Zend\ModuleManager\ModuleManager->loadModuleByName(Object(Zend\ModuleManager\ModuleEvent))
+#1 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(90): Zend\ModuleManager\ModuleManager->loadModule('Contacto')
+#2 [internal function]: Zend\ModuleManager\ModuleManager->onLoadModules(Object(Zend\ModuleManager\ModuleEvent))
+#3 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(468): call_user_func(Array, Object(Zend\ModuleManager\ModuleEvent))
+#4 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zen in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php on line 175
+[15-Jul-2013 16:03:06] PHP Fatal error:  Uncaught exception 'Zend\ModuleManager\Exception\RuntimeException' with message 'Module (Contacto) could not be initialized.' in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php:175
+Stack trace:
+#0 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(149): Zend\ModuleManager\ModuleManager->loadModuleByName(Object(Zend\ModuleManager\ModuleEvent))
+#1 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(90): Zend\ModuleManager\ModuleManager->loadModule('Contacto')
+#2 [internal function]: Zend\ModuleManager\ModuleManager->onLoadModules(Object(Zend\ModuleManager\ModuleEvent))
+#3 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(468): call_user_func(Array, Object(Zend\ModuleManager\ModuleEvent))
+#4 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zen in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php on line 175
+[15-Jul-2013 16:03:28] PHP Fatal error:  Uncaught exception 'Zend\ModuleManager\Exception\RuntimeException' with message 'Module (Contacto) could not be initialized.' in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php:175
+Stack trace:
+#0 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(149): Zend\ModuleManager\ModuleManager->loadModuleByName(Object(Zend\ModuleManager\ModuleEvent))
+#1 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(90): Zend\ModuleManager\ModuleManager->loadModule('Contacto')
+#2 [internal function]: Zend\ModuleManager\ModuleManager->onLoadModules(Object(Zend\ModuleManager\ModuleEvent))
+#3 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(468): call_user_func(Array, Object(Zend\ModuleManager\ModuleEvent))
+#4 /home/sofvecom/public_html/app_sofve/vendor/zendframework/zen in /home/sofvecom/public_html/app_sofve/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php on line 175
+[25-Jul-2013 16:19:44] PHP Fatal error:  Class 'Contacto\Form\Formularios' not found in /home/sofvecom/public_html/app_sofve/module/Contacto/src/Contacto/Controller/ContactoController.php on line 21
+[25-Jul-2013 16:20:28] PHP Fatal error:  Class 'Contacto\Form\Formularios' not found in /home/sofvecom/public_html/app_sofve/module/Contacto/src/Contacto/Controller/ContactoController.php on line 21
+[25-Jul-2013 16:20:30] PHP Fatal error:  Class 'Contacto\Form\Formularios' not found in /home/sofvecom/public_html/app_sofve/module/Contacto/src/Contacto/Controller/ContactoController.php on line 21
+[25-Jul-2013 16:21:08] PHP Fatal error:  Class 'Contacto\Form\Formularios' not found in /home/sofvecom/public_html/app_sofve/module/Contacto/src/Contacto/Controller/ContactoController.php on line 21
+[25-Jul-2013 16:22:25] PHP Fatal error:  Class 'Contacto\Form\Formularios' not found in /home/sofvecom/public_html/app_sofve/module/Contacto/src/Contacto/Controller/ContactoController.php on line 21
+[25-Jul-2013 16:24:03] PHP Fatal error:  Class 'Contacto\Form\Formularios' not found in /home/sofvecom/public_html/app_sofve/module/Contacto/src/Contacto/Controller/ContactoController.php on line 21
+[25-Jul-2013 16:26:17] PHP Fatal error:  Class 'Contacto\Form\Formularios' not found in /home/sofvecom/public_html/app_sofve/module/Contacto/src/Contacto/Controller/ContactoController.php on line 21
+[25-Jul-2013 16:26:19] PHP Fatal error:  Class 'Contacto\Form\Formularios' not found in /home/sofvecom/public_html/app_sofve/module/Contacto/src/Contacto/Controller/ContactoController.php on line 21
+[25-Jul-2013 16:26:23] PHP Fatal error:  Class 'Contacto\Form\Formularios' not found in /home/sofvecom/public_html/app_sofve/module/Contacto/src/Contacto/Controller/ContactoController.php on line 21
+[25-Jul-2013 16:27:42] PHP Fatal error:  Class 'Contacto\Form\Formularios' not found in /home/sofvecom/public_html/app_sofve/module/Contacto/src/Contacto/Controller/ContactoController.php on line 21
+[25-Jul-2013 16:27:43] PHP Fatal error:  Class 'Contacto\Form\Formularios' not found in /home/sofvecom/public_html/app_sofve/module/Contacto/src/Contacto/Controller/ContactoController.php on line 21
+[25-Jul-2013 16:28:27] PHP Fatal error:  Class 'Contacto\Form\Formularios' not found in /home/sofvecom/public_html/app_sofve/module/Contacto/src/Contacto/Controller/ContactoController.php on line 21
+[25-Jul-2013 16:30:14] PHP Fatal error:  Class 'Contacto\Form\Formularios' not found in /home/sofvecom/public_html/app_sofve/module/Contacto/src/Contacto/Controller/ContactoController.php on line 21
+[25-Jul-2013 16:30:19] PHP Fatal error:  Class 'Contacto\Form\Formularios' not found in /home/sofvecom/public_html/app_sofve/module/Contacto/src/Contacto/Controller/ContactoController.php on line 21
+[25-Jul-2013 16:30:20] PHP Fatal error:  Class 'Contacto\Form\Formularios' not found in /home/sofvecom/public_html/app_sofve/module/Contacto/src/Contacto/Controller/ContactoController.php on line 21
+[16-Aug-2013 13:44:54] PHP Fatal error:  Call to a member function getInputFilter() on a non-object in /home/sofvecom/public_html/app_sofve/module/Application/src/Application/Controller/IndexController.php on line 35
+[23-Aug-2013 10:25:52] PHP Fatal error:  Class 'Application\Model\Entity\Noticias' not found in /home/sofvecom/public_html/app_sofve/module/Application/src/Application/Controller/IndexController.php on line 30

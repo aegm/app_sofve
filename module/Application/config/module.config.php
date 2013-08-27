@@ -24,8 +24,11 @@ return array(
               'type'=>'Segment',
               'options'=> array(
                   'route' => '/application/noticia[/[:action]]',
-                  
-              )  
+                  'defaults' => array(
+                  	'controller' => 'Application\Controller\Noticia',
+                  	'action' => 'index'
+                  ),
+              )
             ),
             // The following is a route to simplify getting started creating
             // new controllers and actions without needing to create a new
@@ -52,6 +55,7 @@ return array(
                             'constraints' => array(
                                 'controller' => '[a-zA-Z][a-zA-Z0-9_-]*',
                                 'action'     => '[a-zA-Z][a-zA-Z0-9_-]*',
+                                'id' => '[0-9]*'
                             ),
                             'defaults' => array(
                             ),

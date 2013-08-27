@@ -2,26 +2,26 @@
     <h1 class="efecto">TUS IDEAS SON NUESTRA INSPIRACION</h1>
     <div class="gdhp-wrapper">
         <ul id="slideshow" class="slides" style="position: relative;">
-            <li  class="gdhp-slide-outright"> 
+            <li  class="gdhp-slide-outright">
                 <div class="slideshow-decription right">
                 <h3>Diseñamos tu Sitio Web Profesional</h3>
                 <p>!Rápido y Fácil!<sup class="supSymbol"></sup> Contactamos y obten asesoria al Instante con nuestros Especialistas</p>
                 <a class="flat-btn-grn">Contactar</a> <span>Con precios a partir de 3.000 Bs..</span>
-                </div>   
+                </div>
             </li>
             <li class="gdhp-slide-wsb">
                 <div class="slideshow-decription left">
                 <h3>Suscribete a Sofve.com</h3>
                 <p>Proximanete estaras Participando en el diseño de tu sitio web totalmente Gratis</p>
                 <a class="flat-btn-grn">Ver Noticia</a> <span>Para Mayor Informacion</span>
-                </div>   
+                </div>
             </li>
             <li class="gdhp-slide-wsb">
                 <div class="slideshow-decription right">
                 <h3>Servicios Al Cliente</h3>
                 <p>!Rápido y Fácil!<sup class="supSymbol"></sup> Contactamos y obten asesoria al Instante con nuestros Especialistas</p>
                 <a class="flat-btn-grn">Contactar</a> <span>Con precios a partir de 3.000 Bs..</span>
-                </div>   
+                </div>
             </li>
         </ul>
     </div>
@@ -29,34 +29,35 @@
 </article>
 <article class="conten">
     <?php
-    $form = $this->form;
-    $form->prepare();
-    $form->setAttributes(array(
-        'action'=>$this->url.'application/index/registra',
-        'method'=>'post',
-        'class'=>'forma'
-    ));
-    $formLabel = $this->plugin('formLabel');
-    echo $this->form()->openTag($form);
-    
-    ?>
+$form = $this->form;
+$form->prepare();
+$form->setAttributes(array(
+        'action' => $this->url . 'application/index/registra',
+        'method' => 'post',
+        'class' => 'forma'
+        ));
+$formLabel = $this->plugin('formLabel');
+echo $this->form()->openTag($form);
+
+?>
     <h3>Recibe Nuestras Promociones y Servicios</h3>
-    <p>Si quieres  recibir Información de Nuestros Productos, Servicios y ademas enterarte de todas las novedades en el mundo de la tecnologia Suscribite...  <br> 
+    <p>Si quieres  recibir Información de Nuestros Productos, Servicios y ademas enterarte de todas las novedades en el mundo de la tecnologia Suscribite...  <br>
        ademas podras recibir toda la informacion de Interes referente al mundo de la Tecnologia..</p>
     <fieldset class="externo">
         <fieldset class="interno">
     <p class="for-text">
         <?php
-                $email = $form->get('email');
-                echo $formLabel->openTag().$email->getOption('label')." ";
-                echo $formLabel->closeTag();
-                echo $this->formInput($email);
-        ?>
+$email = $form->get('email');
+echo $formLabel->openTag() . $email->getOption('label') . " ";
+echo $formLabel->closeTag();
+echo $this->formInput($email);
+
+?>
         </p>
         <p>
-        <?php 
-               echo $this->formElement($form->get('send'))
-        ?>
+        <?php
+echo $this->formElement($form->get('send'))
+?>
         </p>
         </fieldset>
     </fieldset>
@@ -68,28 +69,27 @@
     </div>
     </h1>
     <div class="line"></div>
-    <?php 
-        foreach ($this->post as $datos)
-        {
-        ?>
+    <?php
+foreach ($this->post as $datos) { ?>
         <div class="post">
             <div class="cobertor">
             <div class="post-img">
-                <img src="<?php echo $this->url.$datos['img_post']?>"/>
+                <img src="<?php echo $this->url . $datos['img_post']?>"/>
             </div>
             <div class="post-cuerpo">
                 <div class="title">
                     <h3><?php echo strtoupper($datos['titulo_post']);?></h3>
                 </div>
-                <div class="content"><p><?php echo $datos['contenido_post'];?></p></div>  
-                <span class="hipper-link"><a href="#">Leer Mas</a></span>
+                <div class="content"><p><?php echo $datos['contenido_post'];?></p></div>
+                <span class="hipper-link"><a href="<?php echo $this->url('noticia').'/'.'leer'.'/'.$datos['id_post'] ?>">Leer Mas ++</a></span>
             </div>
                 <div style="clear: both"></div>
             </div>
-           
-        </div>  
+
+        </div>
         <?php
-        }
-        ?>  
+}
+
+?>
     <div style="clear: both"></div>
 </article>

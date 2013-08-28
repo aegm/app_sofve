@@ -1,4 +1,20 @@
-<article class="sliders">
+<article class="container">
+	<div id="slideshow" class="nobg">
+		<div class="fullwidthbanner-container portfolio_devices">
+			<div class="fullwidthbanner">
+				<ul>
+					<li>
+					<img src="img/sliders/creative_slider/slide4/bg.png" alt="" />
+					</li>
+					<li>
+						<img src="img/sliders/creative_slider/slide1/bg.png" alt="" />
+					</li>
+				</ul>
+			</div
+	</div>
+	<div class="tp-bannertimer"></div> </div><!-- end fullwidthbanner -->
+	<div id="bottom_mask" class="mask2"></div></div></div><!-- end slideshow -->
+<!-- <article class="sliders">
     <h1 class="efecto">TUS IDEAS SON NUESTRA INSPIRACION</h1>
     <div class="gdhp-wrapper">
         <ul id="slideshow" class="slides" style="position: relative;">
@@ -26,23 +42,24 @@
         </ul>
     </div>
     <br>
-</article>
-<article class="conten">
+</article> -->
+<div class="line-separator"></div>
+    <h3>Recibe Nuestras Promociones y Servicios</h3>
+    <p>Si quieres  recibir Información de Nuestros Productos, Servicios y ademas enterarte de todas las novedades en el mundo de la tecnologia Suscribite...  <br>
+       ademas podras recibir toda la informacion de Interes referente al mundo de la Tecnologia..</p>
     <?php
 $form = $this->form;
 $form->prepare();
 $form->setAttributes(array(
         'action' => $this->url . 'application/index/registra',
         'method' => 'post',
-        'class' => 'forma'
+        'class' => ''
         ));
 $formLabel = $this->plugin('formLabel');
 echo $this->form()->openTag($form);
 
 ?>
-    <h3>Recibe Nuestras Promociones y Servicios</h3>
-    <p>Si quieres  recibir Información de Nuestros Productos, Servicios y ademas enterarte de todas las novedades en el mundo de la tecnologia Suscribite...  <br>
-       ademas podras recibir toda la informacion de Interes referente al mundo de la Tecnologia..</p>
+
     <fieldset class="externo">
         <fieldset class="interno">
     <p class="for-text">
@@ -61,14 +78,14 @@ echo $this->formElement($form->get('send'))
         </p>
         </fieldset>
     </fieldset>
-    <h1>
+    <h3>
     <div>
         Noticias de La Semana
         <div class="extensor">
         </div>
     </div>
-    </h1>
-    <div class="line"></div>
+    </h3>
+    <div class="line-separator"></div>
     <?php
 foreach ($this->post as $datos) { ?>
         <div class="post">

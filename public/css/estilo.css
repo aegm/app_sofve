@@ -1,4 +1,4 @@
-/*COLORES 
+/*COLORES
  *NARANJA #f16529
  *NARANJA OSCURO #e44d26
  *AZUL #042d41
@@ -69,5 +69,5 @@ transition: background-color 0.2s ease-in-out;}
 .post .post-cuerpo {float: right; width: 69%;}*/
 /*BOTONES*/
 .btn-blue{background:#ccc;color:#042d41;cursor:pointer;display:inline-block;padding:13px 35px 11px;text-align:center; text-decoration:none; border: none;}
-footer{width: 100%; background: #EFEFEF; min-height: 120px; border-top: 1px solid #DDDDDD;}
+footer{width: 100%; background: vilo; min-height: 120px; border-top: 1px solid #DDDDDD;}
 footer p{width: 80%; margin: 0 auto; text-align: left; font-size: 14px;}

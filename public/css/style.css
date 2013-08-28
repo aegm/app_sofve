@@ -1,7 +1,90 @@
-body {
-    padding-top: 60px;
-    padding-bottom: 40px;
+@font-face {
+font-family: 'Dosis';
+font-style: normal;
+font-weight: 400;
+src: local('Dosis Regular'), local('Dosis-Regular'), url(http://themes.googleusercontent.com/static/fonts/dosis/v1/xIAtSaglM8LZOYdGmG1JqQ.woff) format('woff');
 }
+@font-face {
+font-family: 'Dosis';
+font-style: normal;
+font-weight: 500;
+src: local('Dosis Medium'), local('Dosis-Medium'), url(http://themes.googleusercontent.com/static/fonts/dosis/v1/A4RWZsncmJ25G8iqn2EHN_esZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+@font-face {
+font-family: 'Dosis';
+font-style: normal;
+font-weight: 700;
+src: local('Dosis Bold'), local('Dosis-Bold'), url(http://themes.googleusercontent.com/static/fonts/dosis/v1/x-7NZTw0n-ypOAaIE8uSrvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+body {
+    padding-bottom: 40px;
+	font-family: Dosis,Tahoma,sans-serif;
+}
+
+
+
+header {
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	background: rgba(0,0,0,0.5);
+	z-index: 1000;
+}
+
+.frontal-header{
+
+
+}
+
+header .logo-primary{
+	/*background:url('../img/sofve.png') no-repeat scroll 0 0 transparent ;*/
+	/*background-size:80px 80px;
+	width:80px;
+	height:60px;
+	display:block;
+	float:left;
+	font-size:30px;
+	font-weight:bold;
+	color:white;*/
+	background: rgba(0,0,0,0.5);
+	border-bottom: 2px solid #000;
+	border-bottom: 2px solid rgba(0,0,0,0.7);
+	border-top: 3px solid #CD2122;
+	color:white;
+	font-size:18px;
+	margin-left:10%;
+	width:10%;
+	height:92%	;
+	z-index:1000;
+}
+
+.logo-primary > a{
+	padding-top:15%;
+	padding-left:30%;
+	color:White;
+	display:block;
+	position:relative;
+	font-size:32px;
+	font-weight:500;
+
+}
+h1,h2,h3{
+	color:#e44d26;
+}
+
+section {
+	width:100%;
+	min-height:150px;
+	position:relative;
+}
+
+article {
+	position:relative;
+	width:100%;
+	color:#535353;
+}
+
+
 
 .zf-green {
     color: #68b604;
@@ -31,7 +114,10 @@ body {
 }
 
 div.container a.brand {
-    background: url("../img/zf2-logo.png") no-repeat scroll 0 10px transparent;
+    /*background: url("../img/sofve.png") no-repeat scroll 0 10px transparent ;*/
     margin-left: 0;
     padding: 8px 20px 12px 40px;
 }
+
+h3 div{display: inline-block;background-color: #7db701;margin: 20px 0;padding: 10px 20px 10px 0;position: relative; line-height:22px; color:#fff;}
+h3 div.extensor {display: block; position: absolute;top: -20px;width: 300px;height: 22px; right: 100%;}

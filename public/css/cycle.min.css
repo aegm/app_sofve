@@ -29,16 +29,16 @@ ul.search-links>li img {padding-right: 4px;position: relative;top:2px}
 ul.slides{width:1000px;height:350px;padding:0;margin:0;overflow:hidden}
 .slides li{cursor:pointer;width:1000px!important;height:350px!important;top:0;left:0}
 .slideshow-decription{margin-top:25px;padding:25px;width:435px;list-style: none;}
-.slideshow-decription>h3{color:#333;display:block;font-size:45px;font-weight:lighter;line-height:46px;margin-top:21px}
+.slideshow-decription>h3{color:#fff;display:block;font-size:30px;font-weight:lighter;line-height:46px;margin-top:21px;font-family: "Arimo", arial, verdana, sans-serif;}
 .slideshow-decription p{color:#333;font-size:20px;height:60px;line-height:26px;margin:19px 0 10px}
 .slideshow-decription span{color:#333;display:inline-block;font-size:24px;margin:0 0 7px 15px;vertical-align:middle;width:212px}
 .slideshow-decription .flat-btn-grn{font-size:24px;line-height:24px;*vertical-align:middle}
 .customer-description{height:350px;margin:0 25px;position:relative;text-shadow:1px 1px 25px #000;width:148px}
 .customer-description p{bottom:23px;color:#fff;font-size:20px;line-height:26px;position:absolute;width:148px}
 .customer-description p>span{display:block;font-size:14px;line-height:20px}
-.gdhp-slide-wsb{background:url(../img/pestaña.png) top right no-repeat #fff;}
+/*.gdhp-slide-wsb{background:url(../img/pestaña.png) top right no-repeat;}
 /*colocando los fondos disponibles*/
-.gdhp-slide-outright{background: url(../img/pantalla.png)no-repeat left #fff;}
+/*.gdhp-slide-outright{background: url(../img/pantalla.png)no-repeat left;}*/
 .gdhp-slide-co{background:url(//img1.wsimg.com/fos/hp/1/gdhp_slide_co.jpg) no-repeat}
 .gdhp-pod{margin:35px 0 20px}
 .gdhp-pod:after{clear:both;content:"";display:table}

@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Kavoon);
+
 @font-face {
 font-family: 'Dosis';
 font-style: normal;
@@ -19,15 +21,24 @@ src: local('Dosis Bold'), local('Dosis-Bold'), url(http://themes.googleuserconte
 body {
     padding-bottom: 40px;
 	font-family: Dosis,Tahoma,sans-serif;
+	margin: 0;
+}
+h1,h2,h3 {padding-left: 2%;}
+h1{font-family: Ubuntu,arial,sans-serif;font-weight: normal;font-size: 19px;line-height: 22px;color: #fff;text-transform: uppercase;margin: 0;clear: both;}
+.efecto{font-size: 45px;text-shadow: -2px 1px 1px rgba(0,0,0,.5);font-weight: 700;margin: 0 0 16px;color: #fff;text-align: center;}
+.servicios{
+	background:#e44d26 url('../img/fondos.png') repeat;
+	display:block;
+
 }
 
 
 
 header {
-	position: absolute;
+	position: relative;
 	width: 100%;
-	height: 100px;
-	background: rgba(0,0,0,0.5);
+	height: 70px;
+	background: rgba(4,45,65,1);
 	z-index: 1000;
 }
 
@@ -37,18 +48,18 @@ header {
 }
 
 header .logo-primary{
-	/*background:url('../img/sofve.png') no-repeat scroll 0 0 transparent ;*/
-	/*background-size:80px 80px;
-	width:80px;
+/*	background:rgba(255,255,255,0.1) url('../img/sofve.png') no-repeat scroll;
+	background-size:100% 95%;
+	/*width:80px;
 	height:60px;
 	display:block;
 	float:left;
 	font-size:30px;
 	font-weight:bold;
 	color:white;*/
-	background: rgba(0,0,0,0.5);
-	border-bottom: 2px solid #000;
-	border-bottom: 2px solid rgba(0,0,0,0.7);
+	/*background: ;*/
+	border-bottom: 2px solid #CD2122;
+	/*border-bottom: 2px solid rgba(0,0,0,0.7);*/
 	border-top: 3px solid #CD2122;
 	color:white;
 	font-size:18px;
@@ -56,6 +67,9 @@ header .logo-primary{
 	width:10%;
 	height:92%	;
 	z-index:1000;
+	float:left;
+	font-family: 'Kavoon', cursive;
+
 }
 
 .logo-primary > a{
@@ -66,25 +80,37 @@ header .logo-primary{
 	position:relative;
 	font-size:32px;
 	font-weight:500;
+	/*background:url('../img/sofve.png')no-repeat scroll 0 0 transparent ;
+	background-size:100% 100%;*/
 
 }
-h1,h2,h3{
-	color:#e44d26;
-}
+
 
 section {
 	width:100%;
 	min-height:150px;
 	position:relative;
+    margin:0;
 }
 
 article {
 	position:relative;
 	width:100%;
 	color:#535353;
+	top:0;
+}
+
+.container h2{
+	color:#e44d26;
 }
 
 
+article > #slideshow {position: relative; top: 0; z-index: 0;}
+
+.post-img img{
+	width:170px;
+	height:140px;
+}
 
 .zf-green {
     color: #68b604;
@@ -121,3 +147,11 @@ div.container a.brand {
 
 h3 div{display: inline-block;background-color: #7db701;margin: 20px 0;padding: 10px 20px 10px 0;position: relative; line-height:22px; color:#fff;}
 h3 div.extensor {display: block; position: absolute;top: -20px;width: 300px;height: 22px; right: 100%;}
+
+.blue{
+	background:#042d41;
+}
+
+.orange{
+	background:#e44d26;
+}

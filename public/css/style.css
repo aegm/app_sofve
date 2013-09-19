@@ -34,59 +34,9 @@ h1{font-family: Ubuntu,arial,sans-serif;font-weight: normal;font-size: 19px;line
 
 
 
-header {
-	position: relative;
-	width: 100%;
-	height: 70px;
-	background: rgba(4,45,65,1);
-	z-index: 1000;
-}
-
-.frontal-header{
-
-
-}
-
-header .logo-primary{
-/*	background:rgba(255,255,255,0.1) url('../img/sofve.png') no-repeat scroll;
-	background-size:100% 95%;
-	/*width:80px;
-	height:60px;
-	display:block;
-	float:left;
-	font-size:30px;
-	font-weight:bold;
-	color:white;*/
-	/*background: ;*/
-	border-bottom: 2px solid #CD2122;
-	/*border-bottom: 2px solid rgba(0,0,0,0.7);*/
-	border-top: 3px solid #CD2122;
-	color:white;
-	font-size:18px;
-	margin-left:10%;
-	width:10%;
-	height:92%	;
-	z-index:1000;
-	float:left;
-	font-family: 'Kavoon', cursive;
-
-}
-
-.logo-primary > a{
-	padding-top:15%;
-	padding-left:30%;
-	color:White;
-	display:block;
-	position:relative;
-	font-size:32px;
-	font-weight:500;
-	/*background:url('../img/sofve.png')no-repeat scroll 0 0 transparent ;
-	background-size:100% 100%;*/
-
-}
-
 
 section {
+
 	width:100%;
 	min-height:150px;
 	position:relative;
@@ -94,6 +44,7 @@ section {
 }
 
 article {
+    margin-top:3%;
 	position:relative;
 	width:100%;
 	color:#535353;
@@ -102,6 +53,17 @@ article {
 
 .container h2{
 	color:#e44d26;
+}
+
+.columnas{
+	background:rgba(0,0,0,0.1);
+	border-radius:4px;
+	color:#000;
+}
+
+.columnas:hover{
+	color:#08c;
+	cursor:pointer;
 }
 
 
@@ -145,8 +107,8 @@ div.container a.brand {
     padding: 8px 20px 12px 40px;
 }
 
-h3 div{display: inline-block;background-color: #7db701;margin: 20px 0;padding: 10px 20px 10px 0;position: relative; line-height:22px; color:#fff;}
-h3 div.extensor {display: block; position: absolute;top: -20px;width: 300px;height: 22px; right: 100%;}
+h3 div{display: inline-block;background-color: #d8d8d8;margin: 20px 0;padding: 10px 20px 10px 0;position: relative; line-height:22px; color:#666;}
+h3 div.extensor {display: block; position: absolute;top: -20px;width: 300px;height: 42px; right: 100%;}
 
 .blue{
 	background:#042d41;
@@ -154,4 +116,41 @@ h3 div.extensor {display: block; position: absolute;top: -20px;width: 300px;heig
 
 .orange{
 	background:#e44d26;
+	color:white;
 }
+
+
+.line{
+	border-top:1px solid #ccc;
+}
+
+.col-lg-4{
+	border-left:1px solid #ccc;
+
+}
+
+.noticias{
+	margin:2%;
+}
+
+.post-img{
+	float:left;
+	width:25%;
+	height:150px;
+	margin:1%;
+}
+
+
+.post-cuerpo{
+	float:right;
+	width:60%;
+}
+
+.post{
+	background:#fff;
+}
+.post:hover{
+	background:#5f5f5f;
+
+}
+

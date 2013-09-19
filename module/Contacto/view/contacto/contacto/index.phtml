@@ -1,11 +1,11 @@
-<article>
-    <h1>
-        <div>
-            Formulario de Contacto
-            <div class="extensor">
-            </div>
+<article class="container">
+<h3 class="">
+    <div class="orange">
+        Formulario de Contacto
+        <div class="extensor orange">
         </div>
-</h1>
+    </div>
+</h3>
 <?php
 $form = $this->form;
 $form->prepare();
@@ -17,15 +17,15 @@ $form->setAttribute('action', $this->url('application/formulario/recibe'));
 $form->setAttribute('method', 'post');
 */
 $form->setAttributes(array(
-    'action' => $this->url.'/contacto/recibe',
-    'method' => 'post',
-    'class'=>'form'
-));
+        'action' => $this->url . '/contacto/recibe',
+        'method' => 'post',
+        'class' => ''
+        ));
 // Get the form label plugin
 $formLabel = $this->plugin('formLabel');
-
 // Render the opening tag
 echo $this->form()->openTag($form);
+
 ?>
     <p>
         Para Consultas relacionadas a proyectos y  o actividades del mundo web escribenos y obten asesoria Tecnica de Nuestros especialistas..
@@ -36,49 +36,49 @@ echo $this->form()->openTag($form);
 <p class="for-text">
     <label>Nombre</label>
 <?php
-    $name = $form->get('nombre');
-    //echo $formLabel->openTag().$name->getOption('label')." ";
-    echo $this->formInput($name);
-    //echo $this->formElementErrors($name);
-    //echo $formLabel->closeTag();
+$name = $form->get('nombre');
+// echo $formLabel->openTag().$name->getOption('label')." ";
+echo $this->formInput($name);
+// echo $this->formElementErrors($name);
+// echo $formLabel->closeTag();
 ?>
 </p>
 <!--Cargando los Elementos en la vista via factory-->
 <p class="for-text">
 <?php
-    $apellido = $form->get('apellido');
-    echo $formLabel->openTag().$apellido->getOption('label')." ";
-    echo $formLabel->closeTag();
-    echo $this->formInput($apellido);
-    //echo $this->formElementErrors($name);
-    
+$apellido = $form->get('apellido');
+echo $formLabel->openTag() . $apellido->getOption('label') . " ";
+echo $formLabel->closeTag();
+echo $this->formInput($apellido);
+// echo $this->formElementErrors($name);
+
 ?>
 </p>
 <p class="for-text">
 <?php
-    $email = $form->get('email');
-    echo $formLabel->openTag().$email->getOption('label')." ";
-    echo $formLabel->closeTag();
-    echo $this->formInput($email);
-    //echo $this->formElementErrors($name);
+$email = $form->get('email');
+echo $formLabel->openTag() . $email->getOption('label') . " ";
+echo $formLabel->closeTag();
+echo $this->formInput($email);
+// echo $this->formElementErrors($name);
 ?>
 </p>
 <p class="for-text">
 <?php
-    $telefono = $form->get('telefono');
-    echo $formLabel->openTag().$telefono->getOption('label')." ";
-    echo $formLabel->closeTag();
-    echo $this->formInput($telefono);
-    //echo $this->formElementErrors($name);
+$telefono = $form->get('telefono');
+echo $formLabel->openTag() . $telefono->getOption('label') . " ";
+echo $formLabel->closeTag();
+echo $this->formInput($telefono);
+// echo $this->formElementErrors($name);
 ?>
 </p>
 <p class="for-text">
 <?php
-    $comentario = $form->get('comentario');
-    echo $formLabel->openTag().$comentario->getOption('label')." ";
-    echo $formLabel->closeTag();
-    echo $this->formTextarea($comentario);
-    //echo $this->formElementErrors($name);
+$comentario = $form->get('comentario');
+echo $formLabel->openTag() . $comentario->getOption('label') . " ";
+echo $formLabel->closeTag();
+echo $this->formTextarea($comentario);
+// echo $this->formElementErrors($name);
 ?>
 </p>
 <!--Otra Forma de Imprimir un elementos-->

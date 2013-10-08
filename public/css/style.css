@@ -25,6 +25,12 @@ body {
 }
 h1,h2,h3 {padding-left: 2%;}
 h1{font-family: Ubuntu,arial,sans-serif;font-weight: normal;font-size: 19px;line-height: 22px;color: #fff;text-transform: uppercase;margin: 0;clear: both;}
+
+.header{
+ text-align: center;
+}
+
+.header h3{font-size: 30px; color: }
 .efecto{font-size: 45px;text-shadow: -2px 1px 1px rgba(0,0,0,.5);font-weight: 700;margin: 0 0 16px;color: #fff;text-align: center;}
 .servicios{
 	background:#e44d26 url('../img/fondos.png') repeat;
@@ -51,9 +57,11 @@ article {
 	top:0;
 }
 
-.container h2{
-	color:#e44d26;
+article > h1{
+    color: #fff;
+    font-family: 'NettoOT', Arial, Helvetica, sans-serif;
 }
+
 
 .columnas{
 	background:rgba(0,0,0,0.1);
@@ -115,7 +123,7 @@ h3 div.extensor {display: block; position: absolute;top: -20px;width: 300px;heig
 }
 
 .orange{
-	background:#e44d26;
+    background-image: -webkit-radial-gradient(center center, circle cover, #F27041 0%, #C53D0D 100%);
 	color:white;
 }
 
@@ -124,11 +132,13 @@ h3 div.extensor {display: block; position: absolute;top: -20px;width: 300px;heig
 	border-top:1px solid #ccc;
 }
 
-.col-lg-4{
-	border-left:1px solid #ccc;
+.servicios{
 
 }
 
+.text_white{
+    color: #fff;
+}
 .noticias{
 	margin:2%;
 }

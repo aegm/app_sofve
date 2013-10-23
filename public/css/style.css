@@ -1,3 +1,9 @@
+/*Colores
+naranja Claro #F27041 
+naranja Oscuro #F27041 
+azul #08c
+
+*/
 @import url(http://fonts.googleapis.com/css?family=Kavoon);
 
 @font-face {
@@ -30,10 +36,10 @@ h1{font-family: Ubuntu,arial,sans-serif;font-weight: normal;font-size: 19px;line
  text-align: center;
 }
 
-.header h3{font-size: 30px; color: }
+.header h3{font-size: 30px; }
 .efecto{font-size: 45px;text-shadow: -2px 1px 1px rgba(0,0,0,.5);font-weight: 700;margin: 0 0 16px;color: #fff;text-align: center;}
 .servicios{
-	background:#e44d26 url('../img/fondos.png') repeat;
+	background:url('../img/principal.jpg')100% 100%, url('../img/fondos.png') repeat;
 	display:block;
 
 }
@@ -60,6 +66,10 @@ article {
 article > h1{
     color: #fff;
     font-family: 'NettoOT', Arial, Helvetica, sans-serif;
+}
+
+article > h2 {
+    font-size: 18px;
 }
 
 
@@ -119,11 +129,12 @@ h3 div{display: inline-block;background-color: #d8d8d8;margin: 20px 0;padding: 1
 h3 div.extensor {display: block; position: absolute;top: -20px;width: 300px;height: 42px; right: 100%;}
 
 .blue{
-	background:#042d41;
+	color: #08c;
 }
 
 .orange{
     background-image: -webkit-radial-gradient(center center, circle cover, #F27041 0%, #C53D0D 100%);
+    background-image: -moz-radial-gradient(center center, circle cover, #F27041 0%, #C53D0D 100%);
 	color:white;
 }
 
@@ -132,8 +143,8 @@ h3 div.extensor {display: block; position: absolute;top: -20px;width: 300px;heig
 	border-top:1px solid #ccc;
 }
 
-.servicios{
-
+#servicios{
+    box-shadow: 0px 2px 33px rgba(0, 0, 0, 0.15);
 }
 
 .text_white{

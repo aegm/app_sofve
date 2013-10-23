@@ -8,7 +8,7 @@
                 <div class="slideshow-decription right">
                 <h3 class="efecto">
                 DISEÑÁMOS TU SITIO WEB PROFESIONAL
-				</h3>
+                </h3>
                 <p>!Rápido y Fácil!<sup class="supSymbol"></sup> Contactamos y obten asesoria al Instante con nuestros Especialistas</p><br/>
                 <a class="flat-btn-grn">Contactar</a> <span>Con precios a partir de 3.000 Bs..</span>
                 </div>
@@ -36,40 +36,41 @@
 </article>
 <article class="container">
 <div class="line-separator"></div>
-    <h2>Recibe Nuestras Promociones y Servicios</h2>
-    <p>Si quieres  recibir Información de Nuestros Productos, Servicios y ademas enterarte de todas las novedades en el mundo de la tecnologia Suscribite...  <br>
-       ademas podras recibir toda la informacion de Interes referente al mundo de la Tecnologia..</p>
+<div class="row">
+    <div class="col-md-7">
+        <h2 class="blue">Recibe Nuestras Promociones y Servicios</h2>
+    <p class="lead">Si quieres  recibir Información de Nuestros Productos, Servicios y ademas enterarte de todas las novedades en el mundo de la tecnologia Suscribite.  <br>
+       Ademas podras recibir toda la informacion de Interes referente al mundo de la Tecnologia..
+    </p>
     <?php
-$form = $this->form;
-$form->prepare();
-$form->setAttributes(array(
-        'action' => $this->url . 'application/index/registra',
-        'method' => 'post',
-        'class' => ''
-        ));
-$formLabel = $this->plugin('formLabel');
-echo $this->form()->openTag($form);
-
-?>
-
+    $form = $this->form;
+    $form->prepare();
+    $form->setAttributes(array(
+            'action' => $this->url . 'application/index/registra',
+            'method' => 'post',
+            'class' => ''
+            ));
+    $formLabel = $this->plugin('formLabel');
+    echo $this->form()->openTag($form);
+    ?>
     <fieldset class="externo">
         <fieldset class="interno">
     <p class="for-text">
         <?php
-$email = $form->get('email');
-echo $formLabel->openTag() . $email->getOption('label') . " ";
-echo $formLabel->closeTag();
-echo $this->formInput($email);
-
-?>
-        </p>
-        <p>
+        $email = $form->get('email');
+        echo $formLabel->openTag() . $email->getOption('label') . " ";
+        echo $formLabel->closeTag();
+        echo $this->formInput($email);
+        ?>
+    </p>
+    <p>
         <?php
-echo $this->formElement($form->get('send'))
-?>
-        </p>
+        echo $this->formElement($form->get('send'))
+        ?>
+    </p>
         </fieldset>
     </fieldset>
+    <?php echo  $this->form()->closeTag(); ?>
     <!-- Porque Somos Sofve-->
 	<!--h3 class="">
 	<div class="">

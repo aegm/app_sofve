@@ -1,4 +1,8 @@
-<article class="servicios">
+<?php
+echo $this->acl;
+
+?>
+<!--article class="servicios">
 	<br/><br/><br/><br/>
 	<h1 class="efecto">TUS IDEAS SON NUESTRA INSPIRACION</h1>
 	<br/>
@@ -43,7 +47,7 @@
        Ademas podras recibir toda la informacion de Interes referente al mundo de la Tecnologia..
     </p>
     <?php
-    $form = $this->form;
+  /*  $form = $this->form;
     $form->prepare();
     $form->setAttributes(array(
             'action' => $this->url . 'application/index/registra',

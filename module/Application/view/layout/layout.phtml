@@ -1,6 +1,15 @@
 <?php echo $this->doctype();?>
 <html lang="es">
     <head>
+        <!--Metas-->
+        <?php
+        $this->headMeta()->setCharset('UTF-8');
+        $this->headTitle('Sofve.com | Diseño Web, Tecnologia, Resposive Design');
+        $this->headMeta()->appendName('author','Angel Gonzalez')
+                         ->appendName('viewport','width=device-width,initial-scale=1.0');
+        echo $this->headMeta();
+        echo $this->headTitle();
+        ?>
         <!--Styles-->
         <?php 
          $this->headLink(array('rel' => 'shortcut icon'),'PREPEND')->appendStylesheet($this->basePath().'/css/estilo.css');
@@ -8,11 +17,13 @@
         <!--Scripts-->
         <?php $this->headScript()->prependFile('//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js');
          echo $this->headScript();?>
-        
     </head>
     <body>
         <div id="content">
-            <header></header>
+            <header>
+                <div class="logo"></div>
+                <nav></nav>
+            </header>
             <?php echo $this->content; ?>
             <footer></footer>
         </div>

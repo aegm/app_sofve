@@ -41,7 +41,8 @@ class Module
     public function initAcl( MvcEvent $e ){        
         $acl = new \Zend\Permissions\Acl\Acl();
         //agregamos los roles
-        $roles = $this->getDbRoles($e);
+        //$roles = $this->getDbRoles($e);
+        $roles = include __DIR__ . '/config/module.acl.roles.php';
         $allResources = array();
         foreach($roles as $roles => $resources){
             $role = new \Zend\Permissions\Acl\Role\GenericRole($roles);
